@@ -757,7 +757,7 @@ MonoBehaviour:
   player: {fileID: 449738}
   startingDialogueVisual: {fileID: 867189344}
   hitBox: {fileID: 1464646471}
-  inkJSON: {fileID: 4900000, guid: 6d4b0b3e4e33b9b4e9451e2c2fa29b21, type: 3}
+  inkJSON: {fileID: 4900000, guid: d797f747561606c4ba5ea1e6f83cff91, type: 3}
   inkManager: {fileID: 1182083191}
 --- !u!212 &427970619
 SpriteRenderer:
