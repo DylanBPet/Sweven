@@ -30,6 +30,7 @@ public class Npc_Behaviors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //cannot do the same dialogue more than once
         if(hitBox.bounds.Contains(player.position) == true && inkManager.finishedFirstDialogue == false)
         {
             startingDialogueVisual.SetActive(true);
