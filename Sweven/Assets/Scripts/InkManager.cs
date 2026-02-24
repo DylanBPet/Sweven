@@ -16,6 +16,8 @@ public class InkManager : MonoBehaviour
     public GameObject[] choices;
     public TextMeshProUGUI[] choicesText;
 
+    public bool finishedFirstDialogue = false;
+
     public int choiceNumber;
 
     public bool dialogueIsPlaying { get; private set; }
@@ -24,6 +26,7 @@ public class InkManager : MonoBehaviour
     void Start()
     {
         dialogueIsPlaying = false;
+        finishedFirstDialogue = false;
         textUI.SetActive(false);
 
         //get all of the choices text
@@ -71,6 +74,8 @@ public class InkManager : MonoBehaviour
         dialogueIsPlaying = false;
         textUI.SetActive(false);
         dialogueText.text = "";
+
+        finishedFirstDialogue = true;
     }
 
     private void ContinueStory()

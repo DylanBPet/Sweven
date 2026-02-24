@@ -30,7 +30,7 @@ public class Npc_Behaviors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hitBox.bounds.Contains(player.position) == true)
+        if(hitBox.bounds.Contains(player.position) == true && inkManager.finishedFirstDialogue == false)
         {
             startingDialogueVisual.SetActive(true);
             if (Keyboard.current.digit1Key.wasPressedThisFrame)
