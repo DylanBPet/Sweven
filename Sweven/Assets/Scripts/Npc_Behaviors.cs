@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using Ink.Runtime;
 
 public class Npc_Behaviors : MonoBehaviour
 {
@@ -8,13 +9,18 @@ public class Npc_Behaviors : MonoBehaviour
     public Transform player;
 
     //npc canvas
-    public GameObject npcUI;
+    public GameObject startingDialogueVisual;
 
     //invis hitbox around npc
     public SpriteRenderer hitBox;
 
-    //sprite renderer for stupid UI above npc
-    public SpriteRenderer startDialogueButton;
+
+    //the ink file
+    public TextAsset inkJSON;
+
+    //dialogue manager script
+    public InkManager inkManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,11 +32,15 @@ public class Npc_Behaviors : MonoBehaviour
     {
         if(hitBox.bounds.Contains(player.position) == true)
         {
-            npcUI.SetActive(true);
+            startingDialogueVisual.SetActive(true);
+            if (Keyboard.current.digit1Key.wasPressedThisFrame)
+            {
+                StartDialogue();
+            }
         }
         else
         {
-            npcUI.SetActive(false);
+            startingDialogueVisual.SetActive(false);
         }
 
      
@@ -38,6 +48,14 @@ public class Npc_Behaviors : MonoBehaviour
 
     public void StartDialogue()
     {
-        Debug.Log("Dialogue started");
+        if(inkManager.dialogueIsPlaying == true)
+        {
+            return;
+        }
+        else
+        {
+            inkManager.EnterDialogueMode(inkJSON);
+        }
+           
     }
 }

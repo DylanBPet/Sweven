@@ -9,6 +9,8 @@ public class PlayerWalkingScript : MonoBehaviour
     public Vector2 input;
 
     public float speed;
+
+    public InkManager inkManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,13 +23,19 @@ public class PlayerWalkingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (inkManager.dialogueIsPlaying == true)
+        {
 
-        input.x = Input.GetAxisRaw("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
+        }
+        else
+        {
+            input.x = Input.GetAxisRaw("Horizontal");
+            input.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("moveX", input.x);
-        animator.SetFloat("moveY", input.y);
+            animator.SetFloat("moveX", input.x);
+            animator.SetFloat("moveY", input.y);
 
-        transform.position += (Vector3) input * speed * Time.deltaTime;
+            transform.position += (Vector3)input * speed * Time.deltaTime;
+        }
     }
 }
