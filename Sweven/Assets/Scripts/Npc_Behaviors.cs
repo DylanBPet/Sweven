@@ -21,6 +21,8 @@ public class Npc_Behaviors : MonoBehaviour
     //dialogue manager script
     public InkManager inkManager;
 
+    //the sprite renderer for the button so it is clickable
+    public SpriteRenderer button;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,11 +32,13 @@ public class Npc_Behaviors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
         //cannot do the same dialogue more than once
-        if(hitBox.bounds.Contains(player.position) == true && inkManager.finishedFirstDialogue == false)
+        if (hitBox.bounds.Contains(player.position) == true && inkManager.finishedFirstDialogue == false)
         {
             startingDialogueVisual.SetActive(true);
-            if (Keyboard.current.digit1Key.wasPressedThisFrame)
+            if (button.bounds.Contains(mousePos) && Mouse.current.leftButton.wasPressedThisFrame)
             {
                 StartDialogue();
             }

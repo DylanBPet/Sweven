@@ -9,7 +9,8 @@ public class DontTouchFire : MonoBehaviour
 
     //the deathScreen screen
     public GameObject deathScreen;
-    public GameObject allFire;
+
+    //things to hide when player dies
     public GameObject player;
 
     //the respawn "button" but its actually just a square cause i cannot press the button because of the dialogue code
@@ -18,6 +19,9 @@ public class DontTouchFire : MonoBehaviour
 
     //where you will be respawned
     private Vector2 respawnPoint = Vector2.zero;
+
+    //is the player dead?
+    public bool playerDead = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,27 +43,32 @@ public class DontTouchFire : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         if(respawnButton.bounds.Contains(mousePos) && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Respawn(respawnPoint);
+            if(playerDead == true)
+            {
+                Respawn(respawnPoint);
+            }
+            
         }
 
     }
     
     public void PlayerDeath()
     {
-        //hide fire
-        allFire.SetActive(false);
+        
         //hide player
         player.SetActive(false);
         //show the button
        showButton.SetActive(true);
         //show a death screen
         deathScreen.SetActive(true);
+        //the player has died
+        playerDead = true;
+        
     }
 
     public void Respawn(Vector2 respawn)
     {
-        //show fire
-        allFire.SetActive(true);
+
         //show player
         player.SetActive(true);
         //hide death screen
