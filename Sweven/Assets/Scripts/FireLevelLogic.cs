@@ -50,6 +50,15 @@ public class FireLevelLogic : MonoBehaviour
     ///////////////////////////////PLAYER///////////////////
     public Transform player;
 
+    ////////////////Level LEAVEL//////
+    public SpriteRenderer levelLeave;
+    //the fire level game object that will be hidden
+    public GameObject fireLevel;
+    //the next scene we will switch to
+    public GameObject MarcusRoom;
+    //the day scene
+    public GameObject fireDayTown;
+
     ///////////////////////////Ink EVERYTHING I will need////////////////////////////////
     //InkManger scrupt
     public InkManager inkManager;
@@ -64,12 +73,7 @@ public class FireLevelLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rockIsPickedUp = false;
-        gOEmerDoorButton.SetActive(false);
-        gORockButton.SetActive(false);
-        gOVentButton.SetActive(false);
-        gOWindowBreakButton.SetActive(false);
-        gOWindowInspectButton.SetActive(false);
+        RestartLevel();
     }
 
     // Update is called once per frame
@@ -105,6 +109,22 @@ public class FireLevelLogic : MonoBehaviour
         IsButtonPressed(emergDoorOpenButton, EmergDoorOpen);
         IsPlayerInHitbox(emergHitbox, gOEmerDoorButton, gOEmerDoorOpenButton);
         
+
+        if(isWindowBroken == true)
+        {
+            if(levelLeave.bounds.Contains(player.position))
+            {
+                //all other scenes will be false
+                fireLevel.SetActive(false);
+                fireDayTown.SetActive(false);
+
+                //go to marcus room
+                MarcusRoom.SetActive(true);
+                player.position = Vector2.zero;
+            }
+        }
+
+      
 
     }
 
@@ -158,12 +178,10 @@ public class FireLevelLogic : MonoBehaviour
 
     public void WindowBreak()
     {
-        if (windowHitbox.bounds.Contains(player.position))
-        {
-            window.SetActive(false);
-            isWindowBroken = true;
-            //windowEscape.SetActive(true);
-        }
+      
+         window.SetActive(false);
+         isWindowBroken = true;
+         escapePath.SetActive(true);
     }
 
     public void VentInspect()
@@ -185,6 +203,27 @@ public class FireLevelLogic : MonoBehaviour
     public void EmergDoorOpen()
     {
         emergDoor.SetActive(false);
+    }
+
+    public void RestartLevel()
+    {
+
+        //reset everything in the level
+        rockIsPickedUp = false;
+        isWindowBroken = false;
+        gOEmerDoorButton.SetActive(false);
+        gORockButton.SetActive(false);
+        gOVentButton.SetActive(false);
+        gOWindowBreakButton.SetActive(false);
+        gOWindowInspectButton.SetActive(false);
+        escapePath.SetActive(false);
+
+        //redraw everything in level
+        rock.SetActive(true);
+        emergDoor.SetActive(true);
+        window.SetActive(true);
+
+
     }
 
 }

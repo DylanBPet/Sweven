@@ -23,6 +23,9 @@ public class DontTouchFire : MonoBehaviour
     //is the player dead?
     public bool playerDead = false;
 
+    //the script that controls the levels logic
+    public FireLevelLogic fireLevelScript;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -75,6 +78,8 @@ public class DontTouchFire : MonoBehaviour
         deathScreen.SetActive(false);
         //hide the button
         showButton.SetActive(false);
+
+        fireLevelScript.RestartLevel();
 
         //respawn player at respawn point
         playerPos.position = respawnPoint;
