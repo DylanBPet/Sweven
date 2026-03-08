@@ -5,47 +5,34 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class FireLevelLogic : MonoBehaviour
 {
-    
+    public GameObject enterKey;
+
     /////////////////////////////////////////////Rock//////////////////////////
-    //the rock button
-    public SpriteRenderer rockButton;
+    public GameObject rockEnterKey;
     //hitbox to show the rock button
     public SpriteRenderer rockHitbox;
-    //game object rock button (used to hide/show it)
-    public GameObject gORockButton;
     //tracks if the rock is picked up
     private bool rockIsPickedUp = false;
     //the rock game object (will be hidden if picked up)
     public GameObject rock;
 
     ////////////////////////////////////////Window/////////////////////////////////
-    //the window inspect button
-    public SpriteRenderer windowInspectButton;
-    //the window break button
-    public SpriteRenderer windowBreakButton;
     //hitbocx to show the window buttons
     public SpriteRenderer windowHitbox;
-    //these will be used to hide/show the window button game objects
-    public GameObject gOWindowInspectButton;
-    public GameObject gOWindowBreakButton;
     //used when the window is broken
     public GameObject window;
     //shown when the window is broken
     public GameObject escapePath;
-    //tracks if the window has been broken
-    private bool isWindowBroken = false;
+    public GameObject windowEnterKey;
+ 
 
     //////////////////////////Vent/////////////////////////
-    public SpriteRenderer ventButton;
     public SpriteRenderer ventHitbox;
-    public GameObject gOVentButton;
+    public GameObject ventEnterKey;
 
     //////////////////////Emergincy Door//////////////////
-    public SpriteRenderer emergDoorButton;
-    public SpriteRenderer emergDoorOpenButton;
     public SpriteRenderer emergHitbox;
-    public GameObject gOEmerDoorButton;
-    public GameObject gOEmerDoorOpenButton;
+    public GameObject emergincyDoorEnterKey;
 
     ///////////////////////////////PLAYER///////////////////
     public Transform player;
@@ -62,10 +49,16 @@ public class FireLevelLogic : MonoBehaviour
     ///////////////////////////Ink EVERYTHING I will need////////////////////////////////
     //InkManger scrupt
     public InkManager inkManager;
+
     //the ink file that will play
     public TextAsset windowText;
+    public TextAsset windowBreakText;
+
     public TextAsset ventText;
+
     public TextAsset emergDoorText;
+
+    public TextAsset rockText;
 
     //the emergincy door itself
     public GameObject emergDoor;
@@ -81,83 +74,82 @@ public class FireLevelLogic : MonoBehaviour
     {
 
         /////////////////////////ROCK/////////////////////////////
-        //tracking if the rock pick up button was pressed, if it is, switch rockIspickedup to true and rock dissapeares
-        IsButtonPressed(rockButton, RockPressed);
-        //if the player is within the hitbox, show the rock pickup button
-        IsPlayerInHitbox(rockHitbox, gORockButton, gORockButton);
+        //if the player is within the hitbox, show the rock pickup text
+        if(rockHitbox.bounds.Contains(player.position))
+        {
+            PlayerCanInteract(rockHitbox, rockEnterKey, RockPressed);
+        }
 
         ///////////////////////////////////Window////////////////////////
-        IsButtonPressed(windowInspectButton, WindowInspect);
-        IsButtonPressed(windowBreakButton, WindowBreak);
-        //show the buttons
-        IsPlayerInHitbox(windowHitbox, gOWindowInspectButton, gOWindowInspectButton);
-        if(rockIsPickedUp == true)
+
+        //When button is activate
+         else if (windowHitbox.bounds.Contains(player.position))
         {
-            IsPlayerInHitbox(windowHitbox, gOWindowBreakButton, gOWindowBreakButton);
+            PlayerCanInteract(windowHitbox, windowEnterKey, WindowInspect);
+        }
+
+
+        ///////////////////////////////////////////Vent////////////////////////////////
+
+        else if (ventHitbox.bounds.Contains(player.position))
+        {
+            PlayerCanInteract(ventHitbox, ventEnterKey, VentInspect);
+        }
+
+        ///////////////////////////emergincy door///////////////////////////////
+        else if (emergHitbox.bounds.Contains(player.position))
+        {
+            PlayerCanInteract(emergHitbox, emergincyDoorEnterKey, EmergDoorText);
         }
         else
         {
-            gOWindowBreakButton.SetActive(false);
+            enterKey.SetActive(false);
         }
 
-        ///////////////////////////////////////////Vent////////////////////////////////
-        IsButtonPressed(ventButton, VentInspect);
-        IsPlayerInHitbox(ventHitbox, gOVentButton, gOVentButton);
-
-        ///////////////////////////emergincy door///////////////////////////////
-        IsButtonPressed(emergDoorButton, EmergincyDoorInspect);
-        IsButtonPressed(emergDoorOpenButton, EmergDoorOpen);
-        IsPlayerInHitbox(emergHitbox, gOEmerDoorButton, gOEmerDoorOpenButton);
-        
-
-        if(isWindowBroken == true)
+        if (inkManager.dialogueIsPlaying == true)
         {
-            if(levelLeave.bounds.Contains(player.position))
-            {
-                //all other scenes will be false
-                fireLevel.SetActive(false);
-                fireDayTown.SetActive(false);
-
-                //go to marcus room
-                MarcusRoom.SetActive(true);
-                player.position = Vector2.zero;
-            }
+            enterKey.SetActive(false);
         }
+
+        if (levelLeave.bounds.Contains(player.position))
+        {
+            //all other scenes will be false
+            fireLevel.SetActive(false);
+            fireDayTown.SetActive(false);
+
+            //go to marcus room
+            MarcusRoom.SetActive(true);
+            player.position = Vector2.zero;
+        }
+       
 
       
 
     }
 
-    public void IsButtonPressed(SpriteRenderer button, Action doThis)
-    {
-        //getting the mousepos
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-
-        //if the button contains mouse pos, and the left button was pressed, do something
-        if (button.bounds.Contains(mousePos) && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            doThis();
-        }
-    }
-
-
-    public void IsPlayerInHitbox(SpriteRenderer hitbox, GameObject button, GameObject button1)
+    public void PlayerCanInteract(SpriteRenderer hitbox, GameObject location, Action doThis)
     {
         if(hitbox.bounds.Contains(player.position))
         {
-            button.SetActive(true);
-            button1.SetActive(true);
+            enterKey.SetActive(true);
+            enterKey.transform.position = location.transform.position;
+
+            if (Keyboard.current.enterKey.wasPressedThisFrame)
+            {
+                doThis();
+            }
+            
         }
         else
         {
-            button.SetActive(false);
-            button1.SetActive(false);
+            enterKey.SetActive(false);
         }
     }
 
     //this happeneds when the rock button has been pressed
     public void RockPressed()
     {
+        inkManager.EnterDialogueMode(rockText);
         if (rockHitbox.bounds.Contains(player.position))
         {
             rockIsPickedUp = true;
@@ -169,9 +161,13 @@ public class FireLevelLogic : MonoBehaviour
     //happeneds when the window inspect button is pressed
     public void WindowInspect()
     {
-        if (windowHitbox.bounds.Contains(player.position))
+        if (rockIsPickedUp == false)
         {
             inkManager.EnterDialogueMode(windowText);
+        }
+        else
+        {
+            inkManager.EnterDialogueMode(windowBreakText);
         }
  
     }
@@ -180,24 +176,17 @@ public class FireLevelLogic : MonoBehaviour
     {
       
          window.SetActive(false);
-         isWindowBroken = true;
          escapePath.SetActive(true);
     }
 
     public void VentInspect()
     {
-        if (ventHitbox.bounds.Contains(player.position))
-        {
-            inkManager.EnterDialogueMode(ventText);
-        }
+        inkManager.EnterDialogueMode(ventText);
     }
 
-    public void EmergincyDoorInspect()
+    public void EmergDoorText()
     {
-        if (emergHitbox.bounds.Contains(player.position))
-        {
-            inkManager.EnterDialogueMode(emergDoorText);
-        }
+        inkManager.EnterDialogueMode(emergDoorText);
     }
 
     public void EmergDoorOpen()
@@ -210,12 +199,6 @@ public class FireLevelLogic : MonoBehaviour
 
         //reset everything in the level
         rockIsPickedUp = false;
-        isWindowBroken = false;
-        gOEmerDoorButton.SetActive(false);
-        gORockButton.SetActive(false);
-        gOVentButton.SetActive(false);
-        gOWindowBreakButton.SetActive(false);
-        gOWindowInspectButton.SetActive(false);
         escapePath.SetActive(false);
 
         //redraw everything in level

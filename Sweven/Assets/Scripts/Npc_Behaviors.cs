@@ -32,13 +32,12 @@ public class Npc_Behaviors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         //cannot do the same dialogue more than once
         if (hitBox.bounds.Contains(player.position) == true && inkManager.finishedFirstDialogue == false)
         {
             startingDialogueVisual.SetActive(true);
-            if (button.bounds.Contains(mousePos) && Mouse.current.leftButton.wasPressedThisFrame)
+            if (Keyboard.current.enterKey.wasPressedThisFrame)
             {
                 StartDialogue();
             }
