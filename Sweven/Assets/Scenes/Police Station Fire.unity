@@ -10134,6 +10134,7 @@ Transform:
   - {fileID: 1534381029}
   - {fileID: 1243348428}
   - {fileID: 901461535}
+  - {fileID: 1841219192}
   m_Father: {fileID: 357930074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700919361
@@ -10549,6 +10550,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1841219191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841219192}
+  m_Layer: 0
+  m_Name: EnterKeyPostionWhenDead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841219192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841219191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.01, y: -1.86, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1613941844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912097827
 GameObject:
   m_ObjectHideFlags: 0
@@ -10873,6 +10905,8 @@ MonoBehaviour:
   showButton: {fileID: 1545843024}
   playerDead: 0
   fireLevelScript: {fileID: 655139039}
+  enterIcon: {fileID: 1912097827}
+  enterIconPosition: {fileID: 1841219191}
 --- !u!4 &1988460729
 Transform:
   m_ObjectHideFlags: 0

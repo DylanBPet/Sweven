@@ -77,7 +77,10 @@ public class FireLevelLogic : MonoBehaviour
         //if the player is within the hitbox, show the rock pickup text
         if(rockHitbox.bounds.Contains(player.position))
         {
-            PlayerCanInteract(rockHitbox, rockEnterKey, RockPressed);
+            if(rockIsPickedUp == false)
+            {
+                PlayerCanInteract(rockHitbox, rockEnterKey, RockPressed);
+            }
         }
 
         ///////////////////////////////////Window////////////////////////
@@ -150,11 +153,8 @@ public class FireLevelLogic : MonoBehaviour
     public void RockPressed()
     {
         inkManager.EnterDialogueMode(rockText);
-        if (rockHitbox.bounds.Contains(player.position))
-        {
             rockIsPickedUp = true;
             rock.SetActive(false);
-        }
        
     }
 

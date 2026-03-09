@@ -26,6 +26,10 @@ public class DontTouchFire : MonoBehaviour
     //the script that controls the levels logic
     public FireLevelLogic fireLevelScript;
 
+    //Enter Key
+    public GameObject enterIcon;
+    public GameObject enterIconPosition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,14 +47,15 @@ public class DontTouchFire : MonoBehaviour
             }
         }
 
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        if(respawnButton.bounds.Contains(mousePos) && Mouse.current.leftButton.wasPressedThisFrame)
+        if(playerDead == true)
         {
-            if(playerDead == true)
+            enterIcon.transform.position = enterIconPosition.transform.position;
+            enterIcon.SetActive(true);
+
+            if (Keyboard.current.enterKey.wasPressedThisFrame)
             {
                 Respawn(respawnPoint);
             }
-            
         }
 
     }
@@ -83,5 +88,9 @@ public class DontTouchFire : MonoBehaviour
 
         //respawn player at respawn point
         playerPos.position = respawnPoint;
+
+        //hides the enter key
+        enterIcon.SetActive(false);
     }
+
 }
