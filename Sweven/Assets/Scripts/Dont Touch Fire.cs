@@ -86,6 +86,8 @@ public class DontTouchFire : MonoBehaviour
 
         fireLevelScript.RestartLevel();
 
+        playerDead = false;
+
         //respawn player at respawn point
         playerPos.position = respawnPoint;
 

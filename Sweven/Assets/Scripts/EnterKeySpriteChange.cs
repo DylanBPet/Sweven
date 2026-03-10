@@ -19,11 +19,11 @@ public class EnterKeySpriteChange : MonoBehaviour
     {
    
         time += 1 * Time.deltaTime;
-        if(time <= 2)
+        if(time <= 1)
         {
             enterKey.sprite = enterKeyWhite;
         }
-        else if (time > 2 && time < 3)
+        else if (time > 1 && time < 2)
         {
                 enterKey.sprite = enterKeyBlack;
         }

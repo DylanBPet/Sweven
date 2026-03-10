@@ -4,15 +4,19 @@ public class FireFakeAnimation : MonoBehaviour
 {
     private SpriteRenderer fireSR;
 
-    public Color fireRed;
-    public Color fireOrange;
-
-    private int colourA;
-    public float changeSpeed;
-
     private Transform fireTran;
 
     private Vector3 startPos;
+    private Vector3 endPos;
+
+    private int randomCol;
+    private int randomChangeTime;
+
+    private float time;
+
+    public Color orange;
+    public Color red;
+    public Color yellow;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,26 +24,43 @@ public class FireFakeAnimation : MonoBehaviour
         fireSR = GetComponent<SpriteRenderer>();
         fireTran = GetComponent<Transform>();
         startPos = fireTran.position;
+        endPos = startPos;
+        endPos.y += 2;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(colourA >= 0)
+        //lerp to a position that is slightly above its starting point
+        if(time == 0)
         {
-            fireSR.color = fireRed;
+            time = Random.Range(0, 0.7f);
         }
-        else if(colourA <= 256)
+        time += 0.5f * Time.deltaTime;
+        fireTran.position = Vector2.Lerp(startPos, endPos, time);
+        if(time > 1)
         {
-            fireSR.color = fireOrange;
+            time = 0;
+        }
+
+        //as it lerps, it gets smaller and shakes side to side
+        fireTran.localScale = Vector2.one * (-1 + time);
+
+
+        //It changes to a random colour red, orange, yellow
+        if(time >= 0.3)
+        {
+            fireSR.color = red;
+        }
+        if (time >= 0.6)
+        {
+            fireSR.color = yellow;
+        }
+        if (time >= 0.6)
+        {
+            fireSR.color = orange;
         }
 
     }
-
-    public void ChangeAlpha()
-    {
-        colourA--;
-    }
-
 }
