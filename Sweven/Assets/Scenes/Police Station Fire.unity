@@ -270,7 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d8ccd53313ecc4fbd83bd264a1098e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
   animator: {fileID: 0}
   input: {x: 0, y: 0}
   speed: 3
@@ -4084,7 +4083,7 @@ MonoBehaviour:
   player: {fileID: 449738}
   startingDialogueVisual: {fileID: 867189344}
   hitBox: {fileID: 1464646471}
-  inkJSON: {fileID: 4900000, guid: beee78adeadf4bd47b9369479338cd65, type: 3}
+  inkJSON: {fileID: 4900000, guid: d797f747561606c4ba5ea1e6f83cff91, type: 3}
   inkManager: {fileID: 1182083191}
   button: {fileID: 545427960}
 --- !u!212 &427970619
