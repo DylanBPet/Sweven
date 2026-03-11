@@ -5,7 +5,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class FireLevelLogic : MonoBehaviour
 {
-    public GameObject enterKey;
+    public EnterKeySpriteChange enterKeyScript;
 
     /////////////////////////////////////////////Rock//////////////////////////
     public GameObject rockEnterKey;
@@ -106,12 +106,12 @@ public class FireLevelLogic : MonoBehaviour
         }
         else
         {
-            enterKey.SetActive(false);
+            enterKeyScript.enterKey.SetActive(false);
         }
 
         if (inkManager.dialogueIsPlaying == true)
         {
-            enterKey.SetActive(false);
+            enterKeyScript.enterKey.SetActive(false);
         }
 
         if (levelLeave.bounds.Contains(player.position))
@@ -134,8 +134,9 @@ public class FireLevelLogic : MonoBehaviour
     {
         if(hitbox.bounds.Contains(player.position))
         {
-            enterKey.SetActive(true);
-            enterKey.transform.position = location.transform.position;
+            enterKeyScript.enterKey.SetActive(true);
+            enterKeyScript.enterKey.transform.position = location.transform.position;
+            enterKeyScript.NewEnterIconPosition();
 
             if (Keyboard.current.enterKey.wasPressedThisFrame)
             {
@@ -145,7 +146,7 @@ public class FireLevelLogic : MonoBehaviour
         }
         else
         {
-            enterKey.SetActive(false);
+            enterKeyScript.enterKey.SetActive(false);
         }
     }
 

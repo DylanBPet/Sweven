@@ -35,6 +35,15 @@ public class InkManager : MonoBehaviour
 
     private Animator layoutAnimator;
 
+    ///for animating letters///
+    private float typingSpeed = 0.03f;
+
+    private Coroutine displayLineCoroutine;
+
+    private bool canContinueToNextLine = false;
+
+    public GameObject continueIcon;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -62,7 +71,9 @@ public class InkManager : MonoBehaviour
             return;
         }
 
-        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        if(canContinueToNextLine 
+            && currentStory.currentChoices.Count == 0
+            && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             ContinueStory(); 
         }
@@ -104,15 +115,53 @@ public class InkManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             //set text for the current dialogue line
-            dialogueText.text = currentStory.Continue();
-            //display choices, if any, for this dialogue line
-            DisplayChoices();
+            //  dialogueText.text = currentStory.Continue();
+
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
+            }
+
+           displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
+                
+            
             //handle tags
             HandleTags(currentStory.currentTags);
         }
         else
         {
             ExitDialogueMode();
+        }
+    }
+
+    private IEnumerator DisplayLine(string line)
+    {
+        dialogueText.text = "";
+
+        continueIcon.SetActive(false);
+        HideChoices();
+
+        canContinueToNextLine = false;
+
+        foreach(char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        continueIcon.SetActive(true);
+
+        //display choices, if any, for this dialogue line
+        DisplayChoices();
+
+        canContinueToNextLine = true;
+    }
+
+    public void HideChoices()
+    {
+        foreach (GameObject choiceButton in choices)
+        {
+            choiceButton.SetActive(false);
         }
     }
 
@@ -172,7 +221,11 @@ public class InkManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
+        if(canContinueToNextLine)
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);
+        }
+       
     }
 
     private IEnumerator SelectedFirstChoice()

@@ -26,7 +26,7 @@ No suspects yet. Cut the alarms and any cameras before lighting the place up. #s
 ->WeirdDream
 
 ===ButWhy===
-Nick: Who knows. like I said, they cut the camera, alarm, and witnesses say he busted a window to escape #speaker: Nick #portrait:nick #layout:right
+Who knows. like I said, they cut the camera, alarm, and witnesses say he busted a window to escape #speaker: Nick #portrait:nick #layout:right
 *[Description?] Did you get a description? #speaker: Marcus #portrait:marcus #layout:left
 ->Description
 
