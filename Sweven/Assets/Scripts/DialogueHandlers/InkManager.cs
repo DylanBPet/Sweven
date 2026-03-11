@@ -88,9 +88,10 @@ public class InkManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        textUI.SetActive(true);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
-        textUI.SetActive(true);
+
 
         //reset portraits, layout, and speaker
 

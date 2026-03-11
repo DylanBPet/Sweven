@@ -25,8 +25,9 @@ public class PlayerWalkingScript : MonoBehaviour
     {
         if (inkManager.dialogueIsPlaying == true)
         {
- 
-
+            input = (Vector2.zero);
+            animator.SetFloat("moveX", input.x);
+            animator.SetFloat("moveY", input.y);
         }
         else
         {
