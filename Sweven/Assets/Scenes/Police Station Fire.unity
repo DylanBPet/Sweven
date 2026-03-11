@@ -4374,9 +4374,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 427970617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef62d549caf1009489c2cd4be63d8ae5, type: 3}
+  m_Script: {fileID: 11500000, guid: 9046eb5da19301d4b9c3fff25347455b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PuttingDialogueOnObjects
+  m_EditorClassIdentifier: Assembly-CSharp::NonRepeatableDialogueOnObjects
   player: {fileID: 449738}
   invisibleHitBox: {fileID: 1464646471}
   inkManager: {fileID: 1182083191}
@@ -7834,7 +7834,7 @@ MonoBehaviour:
   player: {fileID: 449738}
   invisibleHitBox: {fileID: 970617078}
   inkManager: {fileID: 1182083191}
-  inkJSON: {fileID: 4900000, guid: 493fa76349acca5498090952d44d5597, type: 3}
+  inkJSON: {fileID: 4900000, guid: 9e4d83b780f9d6249bd02a43d71b6b65, type: 3}
   textUI: {fileID: 1032047585}
   newIconLocation: {fileID: 901376792}
   enterKeyPrefab: {fileID: 8043649529477207245, guid: cf12afa58cfcd9e40a28781789845330, type: 3}
@@ -8207,7 +8207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &677158327
 Transform:
   m_ObjectHideFlags: 0
@@ -11604,6 +11604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1182083192}
+  - {fileID: 1727464226}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1115481790
@@ -12072,6 +12073,7 @@ MonoBehaviour:
   displayNameText: {fileID: 282378672}
   portraitAnimator: {fileID: 1993495590}
   continueIcon: {fileID: 537182558}
+  inkExternalFunctionsScript: {fileID: 0}
 --- !u!4 &1182083192
 Transform:
   m_ObjectHideFlags: 0
@@ -19398,6 +19400,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ad73253ef0076c45a2c49255857892f, type: 3}
+--- !u!1 &1727464225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727464226}
+  m_Layer: 0
+  m_Name: LevelSwitchingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727464226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727464225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1108724493}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1728460774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19783,7 +19816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1779160545
 Transform:
   m_ObjectHideFlags: 0

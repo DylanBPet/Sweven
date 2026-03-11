@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using System.Collections;
 using UnityEngine.SearchService;
+using System;
+using UnityEngine.Events;
 
 public class InkManager : MonoBehaviour
 {
@@ -43,6 +45,9 @@ public class InkManager : MonoBehaviour
     private bool canContinueToNextLine = false;
 
     public GameObject continueIcon;
+
+    //for calling functions to switch levels
+    public InkExternalFunctions inkExternalFunctionsScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -92,18 +97,25 @@ public class InkManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
 
-
         //reset portraits, layout, and speaker
 
-       displayNameText.text = "???";
+       displayNameText.text = "Marcus";
        portraitAnimator.Play("marcus");
        layoutAnimator.Play("left");
 
         ContinueStory();
     }
 
+    public void ChangeScene(string sceneTarget)
+    {
+
+    }
+
     private void ExitDialogueMode()
     {
+
+        currentStory.UnbindExternalFunction("switchScene");
+
         dialogueIsPlaying = false;
         textUI.SetActive(false);
         dialogueText.text = "";
@@ -146,6 +158,15 @@ public class InkManager : MonoBehaviour
 
         foreach(char letter in line.ToCharArray())
         {
+            /* 
+               idk why this not working
+            if(Keyboard.current.spaceKey.wasPressedThisFrame)
+            {
+                dialogueText.text = line;
+                break;
+            } 
+            */
+
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
