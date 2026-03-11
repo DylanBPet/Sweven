@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerWalkingScript : MonoBehaviour
 {
-    public Rigidbody2D rigidBody;
+    //public Rigidbody2D rigidBody;
 
     public Animator animator;
 
@@ -15,7 +15,7 @@ public class PlayerWalkingScript : MonoBehaviour
     void Start()
     {
      
-        rigidBody = GetComponent<Rigidbody2D>();
+        //rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
     }
@@ -25,6 +25,7 @@ public class PlayerWalkingScript : MonoBehaviour
     {
         if (inkManager.dialogueIsPlaying == true)
         {
+ 
 
         }
         else

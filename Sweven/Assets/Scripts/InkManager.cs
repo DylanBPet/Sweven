@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using System.Collections;
+using UnityEngine.SearchService;
 
 public class InkManager : MonoBehaviour
 {
@@ -22,6 +23,18 @@ public class InkManager : MonoBehaviour
 
     public bool dialogueIsPlaying { get; private set; }
 
+
+    /////////////For the names and icons///////////
+    private const string SPEAKER_TAG = "speaker";
+    private const string PORTRAIT_TAG = "portrait";
+    private const string LAYOUT_TAG = "layout";
+
+    public TextMeshProUGUI displayNameText;
+
+    public Animator portraitAnimator;
+
+    private Animator layoutAnimator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,6 +50,8 @@ public class InkManager : MonoBehaviour
             choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
         }
+
+        layoutAnimator = textUI.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -66,6 +81,12 @@ public class InkManager : MonoBehaviour
         dialogueIsPlaying = true;
         textUI.SetActive(true);
 
+        //reset portraits, layout, and speaker
+
+       displayNameText.text = "???";
+       portraitAnimator.Play("marcus");
+       layoutAnimator.Play("left");
+
         ContinueStory();
     }
 
@@ -86,10 +107,45 @@ public class InkManager : MonoBehaviour
             dialogueText.text = currentStory.Continue();
             //display choices, if any, for this dialogue line
             DisplayChoices();
+            //handle tags
+            HandleTags(currentStory.currentTags);
         }
         else
         {
             ExitDialogueMode();
+        }
+    }
+
+    private void HandleTags(List<string> currentTags)
+    {
+        //loop through each tag and handle it accordingly
+        foreach (string tag in currentTags)
+        {
+            //parse the tag
+            string[] splitTag = tag.Split(':');
+            if(splitTag.Length != 2)
+            {
+                Debug.LogError("tag could not be appropatly parsed: " + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
+
+            //handle the tag
+            switch(tagKey)
+            {
+                case SPEAKER_TAG:
+                    displayNameText.text = tagValue;
+                    break;
+                case PORTRAIT_TAG:
+                    portraitAnimator.Play(tagValue);
+                    break;
+                case LAYOUT_TAG:
+                    layoutAnimator.Play(tagValue);
+                    break;
+                default:
+                    Debug.LogWarning("tag came in but is jnot currently being handled " + tag);
+                    break;
+            }
         }
     }
 
