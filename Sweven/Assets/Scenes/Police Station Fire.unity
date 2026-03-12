@@ -2911,7 +2911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &249029910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18119,7 +18119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1419713410
 Transform:
   m_ObjectHideFlags: 0
@@ -22963,6 +22963,7 @@ MonoBehaviour:
   marcusRoomDay: {fileID: 1779160544}
   marcusRoomNight: {fileID: 1419713409}
   marcusHomeNightLevelLogicScript: {fileID: 1920932344}
+  puttingDialogueOnObjectsScript: {fileID: 651881122}
 --- !u!1001 &1728460774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23291,7 +23292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1779160545
 Transform:
   m_ObjectHideFlags: 0

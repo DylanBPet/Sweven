@@ -24,6 +24,7 @@ public class LevelSwitchingHandler : MonoBehaviour
 
     //scripts to call
     public MarcusHomeNightLevelLogic marcusHomeNightLevelLogicScript;
+    public PuttingDialogueOnObjects puttingDialogueOnObjectsScript;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -80,5 +81,8 @@ public class LevelSwitchingHandler : MonoBehaviour
         //remove the door in marcus room
         roomDoor.SetActive(false);
         doorIsGone = true;
+
+        //destroy the enter key
+        puttingDialogueOnObjectsScript.DeleteList();
     }
 }

@@ -68,6 +68,7 @@ public class PuttingDialogueOnObjects : MonoBehaviour
             }
 
             //show/hide enter key if dialogue is playing
+            //is REPETABLE
             if (inkManager.dialogueIsPlaying == true)
             {
                 enterKeyList[0].gameObject.SetActive(false);
@@ -90,17 +91,22 @@ public class PuttingDialogueOnObjects : MonoBehaviour
                 //remove the instantiates 
             if (enterKeyList.Count > 0)
             {
-                //delete the enter key
-                for (int i = enterKeyList.Count - 1; i >= 0; i--)
-                {
-                    spawnedEnterKey = enterKeyList[i];
-                    enterKeyList.Remove(spawnedEnterKey);
-
-                    Destroy(spawnedEnterKey);
-                }
+                DeleteList();
             }
         }
 
+    }
+
+    public void DeleteList()
+    {
+        //delete the enter key
+        for (int i = enterKeyList.Count - 1; i >= 0; i--)
+        {
+            spawnedEnterKey = enterKeyList[i];
+            enterKeyList.Remove(spawnedEnterKey);
+
+            Destroy(spawnedEnterKey);
+        }
     }
 
     public void StartDialogue()

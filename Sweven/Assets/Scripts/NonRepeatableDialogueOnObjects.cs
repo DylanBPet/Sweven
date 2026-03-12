@@ -69,7 +69,7 @@ public class NonRepeatableDialogueOnObjects : MonoBehaviour
             }
 
             //show/hide enter key if dialogue is playing
-            if (inkManager.dialogueIsPlaying == true || inkManager.finishedFirstDialogue == true)
+            if (inkManager.dialogueIsPlaying == true && inkManager.finishedFirstDialogue == false)
             {
                 enterKeyList[0].gameObject.SetActive(false);
             }
@@ -80,7 +80,7 @@ public class NonRepeatableDialogueOnObjects : MonoBehaviour
 
             //Dialouge 
             //can NOT do the same dialogue more than once
-            if (Keyboard.current.enterKey.wasPressedThisFrame && inkManager.finishedFirstDialogue == false)
+            if (Keyboard.current.enterKey.wasPressedThisFrame && inkManager.finishedFirstDialogue == true)
             {
                 textUI.SetActive(true);
                 StartDialogue();
