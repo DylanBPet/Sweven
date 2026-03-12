@@ -74,5 +74,5 @@ Lets get back to the station and see what the others have got #speaker: Nick #po
 
 ===Helpful===
 I know right. The way they were described it could even have been you HAHA #speaker: Nick #portrait:nick #layout:right
-Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right
+Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right #hide:endDemo
 ->END

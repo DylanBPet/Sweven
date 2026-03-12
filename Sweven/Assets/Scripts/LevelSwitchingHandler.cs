@@ -19,6 +19,7 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject fireDayTown;
     public GameObject marcusRoomDay;
     public GameObject marcusRoomNight;
+    public GameObject endDemoScreen;
 
     private bool doorIsGone = false;
 
@@ -84,5 +85,12 @@ public class LevelSwitchingHandler : MonoBehaviour
 
         //destroy the enter key
         puttingDialogueOnObjectsScript.DeleteList();
+    }
+
+    public void EndDemo()
+    {
+        //switch scene to end screen
+        fireDayTown.SetActive(false);
+        endDemoScreen.SetActive(true);
     }
 }
