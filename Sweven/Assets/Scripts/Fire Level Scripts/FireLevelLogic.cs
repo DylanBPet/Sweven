@@ -66,7 +66,7 @@ public class FireLevelLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        RestartLevel();
+        //RestartLevel();
     }
 
     // Update is called once per frame
@@ -154,10 +154,15 @@ public class FireLevelLogic : MonoBehaviour
     public void RockPressed()
     {
         inkManager.EnterDialogueMode(rockText);
-            rockIsPickedUp = true;
-            rock.SetActive(false);
-       
     }
+
+    public void RockPickedUp()
+    {
+        rockIsPickedUp = true;
+        rock.SetActive(false);
+
+    }
+
 
     //happeneds when the window inspect button is pressed
     public void WindowInspect()

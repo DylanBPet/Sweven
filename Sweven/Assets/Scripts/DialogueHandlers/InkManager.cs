@@ -30,6 +30,7 @@ public class InkManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private const string HIDE_TAG = "hide";
 
     public TextMeshProUGUI displayNameText;
 
@@ -46,8 +47,8 @@ public class InkManager : MonoBehaviour
 
     public GameObject continueIcon;
 
-    //for calling functions to switch levels
-    public InkExternalFunctions inkExternalFunctionsScript;
+    public LevelSwitchingHandler levelSwitchingHandlerScript;
+    public FireLevelLogic fireLevelLogicScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -102,19 +103,13 @@ public class InkManager : MonoBehaviour
        displayNameText.text = "Marcus";
        portraitAnimator.Play("marcus");
        layoutAnimator.Play("left");
+       //levelSwitchingHandlerScript.RemoveObject(" ");
 
         ContinueStory();
     }
 
-    public void ChangeScene(string sceneTarget)
-    {
-
-    }
-
     private void ExitDialogueMode()
     {
-
-        currentStory.UnbindExternalFunction("switchScene");
 
         dialogueIsPlaying = false;
         textUI.SetActive(false);
@@ -127,8 +122,6 @@ public class InkManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            //set text for the current dialogue line
-            //  dialogueText.text = currentStory.Continue();
 
             if (displayLineCoroutine != null)
             {
@@ -213,10 +206,46 @@ public class InkManager : MonoBehaviour
                 case LAYOUT_TAG:
                     layoutAnimator.Play(tagValue);
                     break;
+                case HIDE_TAG:
+                    RemoveObject(tagValue);
+                    break;
                 default:
                     Debug.LogWarning("tag came in but is jnot currently being handled " + tag);
                     break;
             }
+        }
+    }
+
+    /// here
+
+    public void RemoveObject(string objectToRemove)
+    {
+        //remove the door in marcus room
+        if (objectToRemove == "roomDoor")
+        {
+            levelSwitchingHandlerScript.RoomDoor();
+        }
+        //switch level to dream fire
+        else if (objectToRemove == "goToSleep")
+        {
+            Debug.Log("goToSleep");
+            levelSwitchingHandlerScript.GoToSleep();
+        }
+        else if (objectToRemove == "openEmergDoor")
+        {
+            fireLevelLogicScript.EmergDoorOpen();
+        }
+        else if (objectToRemove == "windowBreak")
+        {
+            fireLevelLogicScript.WindowBreak();
+        }
+        else if (objectToRemove == "rockPickedUp")
+        {
+            fireLevelLogicScript.RockPickedUp();
+        }
+        else
+        {
+            Debug.Log("Something Else");
         }
     }
 
