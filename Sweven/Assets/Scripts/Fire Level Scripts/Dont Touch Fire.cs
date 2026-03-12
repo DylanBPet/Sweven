@@ -71,7 +71,8 @@ public class DontTouchFire : MonoBehaviour
         deathScreen.SetActive(true);
         //the player has died
         playerDead = true;
-        
+        enterIcon.SetActive(true);
+
     }
 
     public void Respawn(Vector2 respawn)

@@ -116,10 +116,10 @@ TextureImporter:
       name: Nick Portrait_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 30
-        width: 175
-        height: 203
+        x: 536
+        y: 387
+        width: 1162
+        height: 1385
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
