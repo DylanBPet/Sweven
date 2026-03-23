@@ -231,6 +231,10 @@ public class InkManager : MonoBehaviour
             Debug.Log("goToSleep");
             levelSwitchingHandlerScript.GoToSleep();
         }
+        else if (objectToRemove == "endDemo")
+        {
+            levelSwitchingHandlerScript.EndDemo();
+        }
         else if (objectToRemove == "openEmergDoor")
         {
             fireLevelLogicScript.EmergDoorOpen();
