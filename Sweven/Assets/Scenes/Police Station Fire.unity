@@ -23099,9 +23099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b1381d94cac59940acf4476eba1b7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FuneralLevelManager
-  player: {fileID: 449736}
-  inkManager: {fileID: 1182083191}
-  inkJSON: {fileID: 4900000, guid: 6900a4ce7d233bc4c9dcf527af51642f, type: 3}
+  blackBox: {fileID: 302243813}
 --- !u!4 &1616341259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5784858755750612488, guid: 2ad73253ef0076c45a2c49255857892f, type: 3}
