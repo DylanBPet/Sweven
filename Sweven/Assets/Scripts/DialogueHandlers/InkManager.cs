@@ -5,9 +5,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using System.Collections;
-using UnityEngine.SearchService;
-using System;
-using UnityEngine.Events;
 
 public class InkManager : MonoBehaviour
 {
@@ -49,6 +46,7 @@ public class InkManager : MonoBehaviour
 
     public LevelSwitchingHandler levelSwitchingHandlerScript;
     public FireLevelLogic fireLevelLogicScript;
+    public FuneralLevelManager funeralLevelManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -103,6 +101,7 @@ public class InkManager : MonoBehaviour
        displayNameText.text = "Marcus";
        portraitAnimator.Play("marcus");
        layoutAnimator.Play("left");
+
        //levelSwitchingHandlerScript.RemoveObject(" ");
 
         ContinueStory();
@@ -246,6 +245,10 @@ public class InkManager : MonoBehaviour
         else if (objectToRemove == "rockPickedUp")
         {
             fireLevelLogicScript.RockPickedUp();
+        }
+        else if (objectToRemove == "showPlayer")
+        {
+            funeralLevelManager.ShowPlayerSprite();
         }
         else
         {
