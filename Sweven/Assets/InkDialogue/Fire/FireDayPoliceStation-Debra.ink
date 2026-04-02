@@ -47,6 +47,3 @@ I mean who hasnt burnt down a library as a teenager. Im just saying that if I we
 ===Interesting
 Interesting...
 ->END
-
-
-
