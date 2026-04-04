@@ -4,12 +4,12 @@
 ===Begining===
 Thank you for coming Sennah, im glad to see you here. #speaker: Marcus #portrait:marcus #layout:left
 Emma was my friend, a kindred spirit of sorts. How are you processing everything Marcus? #speaker: Sennah #portrait:sennah #layout:right
-*[I'm okay] #speaker: Marcus #portrait:marcus #layout:left
+*[I'm okay] Im okay. Maybe it just hasnt hit me yet, that I will never see her again. #speaker: Marcus #portrait:marcus #layout:left
 ->ImOkay
-*[I'm fine] #speaker: Marcus #portrait:marcus #layout:left
+*[I'm fine] I am fine. We knew she was ill. it still hurts though #speaker: Marcus #portrait:marcus #layout:left
 ->ImFine
 *[Same as Nick] About the same as nick id say, still processing. #speaker: Marcus #portrait:marcus #layout:left
-->SameAsNick
+->Nick
 
 ===ImOkay
 Dont think about it like that. You and I understand better than anyone that because she is still with us in our souls we have not yet lost her #speaker: Sennah #portrait:sennah #layout:right
@@ -83,32 +83,27 @@ You and Emma of all people should understand its more similar than one might thi
 *[What do you mean?] #speaker: Marcus #portrait:marcus #layout:left
 ->TakeCareOfYourself
 
-===SameAsNick
+
+===Nick
 I can sense there is more to his grief than meets the eye. Keep an eye on him as a friend will you? #speaker: Sennah #portrait:sennah #layout:right
 *[Like what?] Like what exactly? #speaker: Marcus #portrait:marcus #layout:left
 ->LikeWhat
-*[Obviously] Obviously, his fiance just died  #speaker: Marcus #portrait:marcus #layout:left
+*[Obviously] Obviously, his fiance just died #speaker: Marcus #portrait:marcus #layout:left
 ->Obviously
 
 ===LikeWhat
 Hes your friend not mine marcus, if he wants you to know he will tell you. Im just saying be there for him too. #speaker: Sennah #portrait:sennah #layout:right
-*[Thats vague] Are you being purposely vague?
-->CantHelpIt
-*[You're weird] You are just as weird as he says you are #speaker: Marcus #portrait:marcus #layout:left
-->CantHelpIt
-*["Us Humans"]Well "us humans" dont like being overanalyzed. Be carful how much of your spiritness you talk about #speaker: Marcus #portrait:marcus #layout:left
-->CantHelpIt
-===Obviously
-Youre right, maybe it was obvious. Human emotions are more complex than most #speaker: Sennah #portrait:sennah #layout:right
 *[Thats vague] Are you being purposely vague? #speaker: Marcus #portrait:marcus #layout:left
-->CantHelpIt
-*[You're weird] You are just as weird as he says you are #speaker: Marcus #portrait:marcus #layout:left
-->CantHelpIt
-*["Us Humans"]Well "us humans" dont like being overanalyzed. Be carful how much of your spiritness you talk about #speaker: Marcus #portrait:marcus #layout:left
-->CantHelpIt
+->YoureWeird
+*[Youre weird] You are just as weird as he says you are #speaker: Marcus #portrait:marcus #layout:left
+->YoureWeird
 
-===CantHelpIt
-I cant help it. Emma really liked talking about it with me. I know i said shes with us in spirit, but I will miss our talks #speaker: Sennah #portrait:sennah #layout:right
+===Obviously
+*["us humans"] Well "us humans" dont like being overanalyzed. Be carful how much of your spiritness you talk about #speaker: Marcus #portrait:marcus #layout:left
+->YoureWeird
+*[Youre weird] You are just as weird as he says you are #speaker: Marcus #portrait:marcus #layout:left
+->YoureWeird
+
+===YoureWeird
+I cant help it. Emma really liked talking about it with me. I know i said shes with us in spirit, but I will miss our talks #speaker: Sennah #portrait:sennah #layout:right #hide:toMarcusRoomNight
 ->END
-
-

@@ -250,6 +250,18 @@ public class InkManager : MonoBehaviour
         {
             funeralLevelManager.ShowPlayerSprite();
         }
+        else if (objectToRemove == "talkedToNick")
+        {
+            funeralLevelManager.TalkedToNickFirst();
+        }
+        else if (objectToRemove == "talkedTosennah")
+        {
+            funeralLevelManager.TalkedToSennahFirst();
+        }
+        else if (objectToRemove == "toMarcusRoomNight")
+        {
+            funeralLevelManager.ToMarcusRoomNight();
+        }
         else
         {
             Debug.Log("Something Else");

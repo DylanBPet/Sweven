@@ -87,7 +87,7 @@ Maybe, I barely remember it myself... I miss her #speaker: Marcus #portrait:marc
 ->MeTooBuddy
 
 ===MeTooBuddy
-Me too buddy. #speaker: Nick #portrait:nick #layout:right
+Me too buddy. #speaker: Nick #portrait:nick #layout:right #hide:talkedToNick
 ->END
 
 

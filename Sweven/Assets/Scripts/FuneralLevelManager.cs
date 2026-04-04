@@ -5,6 +5,15 @@ public class FuneralLevelManager : MonoBehaviour
 {
     public GameObject blackBox;
 
+    public GameObject Sennah;
+    public GameObject SennahTalkedToNickFirst;
+
+    public GameObject Nick;
+    public GameObject NickTalkedToSennahFirst;
+
+    public GameObject funeralScene;
+    public GameObject roomNight;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,8 +31,20 @@ public class FuneralLevelManager : MonoBehaviour
         blackBox.SetActive(false);
     }
 
-    public void StartDialogue()
+    public void TalkedToSennahFirst()
     {
+        Nick.SetActive(false);
+        NickTalkedToSennahFirst.SetActive(true);
+    }
+    public void TalkedToNickFirst()
+    {
+        Sennah.SetActive(false);
+        SennahTalkedToNickFirst.SetActive(true);
+    }
 
+    public void ToMarcusRoomNight()
+    {
+        funeralScene.SetActive(false);
+        roomNight.SetActive(true);
     }
 }

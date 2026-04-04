@@ -4,9 +4,9 @@
 ===Begining===
 Thank you for coming Sennah, im glad to see you here. #speaker: Marcus #portrait:marcus #layout:left
 Emma was my friend, a kindred spirit of sorts. How are you processing everything Marcus? #speaker: Sennah #portrait:sennah #layout:right
-*[I'm okay] #speaker: Marcus #portrait:marcus #layout:left
+*[I'm okay] Im okay. Maybe it just hasnt hit me yet, that I will never see her again. #speaker: Marcus #portrait:marcus #layout:left
 ->ImOkay
-*[I'm fine] #speaker: Marcus #portrait:marcus #layout:left
+*[I'm fine] I am fine. We knew she was ill. it still hurts though #speaker: Marcus #portrait:marcus #layout:left
 ->ImFine
 
 ===ImOkay
@@ -41,7 +41,7 @@ Narrorator: Sennah looks off in a direction and giggles, seemingly at nothing.
 ->TakeCareOfYourself
 
 ===TakeCareOfYourself
-Take care of yourself Marcus #speaker: Sennah #portrait:sennah #layout:right
+Take care of yourself Marcus #speaker: Sennah #portrait:sennah #layout:right #hide:talkedTosennah
 ->END
 
 ===Thankyou
@@ -78,5 +78,7 @@ oh if i could fly away with them we probably would have never met to have this c
 ===IDontKnow
 You and Emma of all people should understand its more similar than one might think #speaker: Sennah #portrait:sennah #layout:right
 
-*[What do you mean?] #speaker: Marcus #portrait:marcus #layout:left
+*[What do you mean?] What do you mean by that? #speaker: Marcus #portrait:marcus #layout:left 
+->TakeCareOfYourself
+*[so youre saying...] So youre saying I could be a video game Character?
 ->TakeCareOfYourself
