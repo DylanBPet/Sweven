@@ -17,7 +17,7 @@ Right, the floating jellyfish can talk #speaker: Nick #portrait:nick #layout:rig
 ->MouthToTalk
 
 ===MouthToTalk
-Just go home for the day, I will let you know any updates on our average everything person on the arson #speaker: Nick #portrait:nick #layout:right
+Just go home for the day, I will let you know any updates on our average everything person on the arson #speaker: Nick #portrait:nick #layout:right #hide:talkedToNickPoliceStation
 ->END
 
 ===Debra
@@ -39,11 +39,12 @@ How? not like they have tracking numbers in em #speaker: Nick #portrait:nick #la
 ->JustCheck
 
 ===HerBluntThinking
-Head home for the day Marcus. I can feel theres more here but the feeling will still be here tomorrow. Goodnight #speaker: Nick #portrait:nick #layout:right
+Head home for the day Marcus. I can feel theres more here but the feeling will still be here tomorrow. Goodnight #speaker: Nick #portrait:nick #layout:right #hide:talkedToNickPoliceStation
 ->END
 
 ===JustCheck
-That lady creeps me out more than Sennah. Fine, ill make sure to put her down on the witness list. Go home for the day, I have some more stuff i gotta fill out before i leave the office #speaker: Nick #portrait:nick #layout:right
+That lady creeps me out more than Sennah. Fine, ill make sure to put her down on the witness list. #speaker: Nick #portrait:nick #layout:right
+Go home for the day, I have some more stuff I gotta fill out before I leave the office #speaker: Nick #portrait:nick #layout:right #hide:talkedToNickPoliceStation
 ->END
 
 

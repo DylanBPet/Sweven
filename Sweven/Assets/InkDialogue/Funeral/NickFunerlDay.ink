@@ -4,11 +4,13 @@
 ===Begining===
 Hey Nick, how are you holding up? #speaker: Marcus #portrait:marcus #layout:left
 I just... Dont think it has quite hit me yet, you know? #speaker: Nick #portrait:nick #layout:right
-*[I get it] I know exactly what you mean. She basically raised me. I wouldnt be here today if not for her, so why am I not more upset? Is there something wrong with me #speaker: Marcus #portrait:marcus #layout:left
+*[I get it] I know exactly what you mean. She basically raised me. I wouldnt be here today if not for her, so why am I not more upset? #speaker: Marcus #portrait:marcus #layout:left
+Is there something wrong with me #speaker: Marcus #portrait:marcus #layout:left
 ->IGetIt
 
 ===IGetIt===
-Everyone grieves in their own way Marcus, we shouldnt beat ourselves up over how others react to us. Emma wouldnt have wanted that for us, especially not you. #speaker: Nick #portrait:nick #layout:right
+Everyone grieves in their own way Marcus, we shouldnt beat ourselves up over how others react to us. #speaker: Nick #portrait:nick #layout:right
+Emma wouldnt have wanted that for us, especially not you. #speaker: Nick #portrait:nick #layout:right
 
 As for me, shed probably want me to suffer and never get engaged again haha. #speaker: Nick #portrait:nick #layout:right
 
@@ -29,7 +31,8 @@ Youre right, shes in a much better place now... I miss her #speaker: Marcus #por
 ->MeTooBuddy
 
 ==WhatDidSheSay==
-She always talked about you, she was proud of the man you've become. Like you said she raised you, so you were a son to her. She'd never want anything bad to happen to you again. Im sure shes watching over you even now. #speaker: Nick #portrait:nick #layout:right
+She always talked about you, she was proud of the man you've become. Like you said she raised you, so you were a son to her. #speaker: Nick #portrait:nick #layout:right
+She'd never want anything bad to happen to you again. Im sure shes watching over you even now. #speaker: Nick #portrait:nick #layout:right
 
 Thank you Nick I just... I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
@@ -69,7 +72,8 @@ I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
 
 ===TellMeMore===
-Well your sister was anything but traditional, she wanted a small wedding, no church. She fell in love with an old beat up cabin on a lake at the outskirts of town. #speaker: Nick #portrait:nick #layout:right
+Well your sister was anything but traditional, she wanted a small wedding, no church. #speaker: Nick #portrait:nick #layout:right
+She fell in love with an old beat up cabin on a lake at the outskirts of town. #speaker: Nick #portrait:nick #layout:right
 *[Cant Argue] She wasnt one to be argued with either #speaker: Marcus #portrait:marcus #layout:left
 ->CantArgue
 

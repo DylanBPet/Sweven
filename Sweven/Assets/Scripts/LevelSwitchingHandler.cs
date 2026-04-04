@@ -19,7 +19,9 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject fireDayTown;
     public GameObject marcusRoomDay;
     public GameObject marcusRoomNight;
-    public GameObject endDemoScreen;
+    public GameObject fire_policeStation;
+    public GameObject marcusRoomNightAnimalLevel;
+    public GameObject animalLevel;
 
     private bool doorIsGone = false;
 
@@ -91,9 +93,19 @@ public class LevelSwitchingHandler : MonoBehaviour
     {
         //switch scene to end screen
         fireDayTown.SetActive(false);
-        endDemoScreen.SetActive(true);
+        fire_policeStation.SetActive(true);
     }
 
+    public void ToAnimalLevel()
+    {
+        marcusRoomNightAnimalLevel.SetActive(false);
+        animalLevel.SetActive(true);
+    }
 
+    public void FireLevelDone()
+    {
+        fire_policeStation.SetActive(false);
+        marcusRoomNightAnimalLevel.SetActive(true);
+    }
 
 }

@@ -31,7 +31,7 @@ Spirits give me vibes, they work in mysterious ways. That could be more valuable
 Ask Sennah about the dream? #speaker: Sennah #portrait:sennah #layout:right
 *[Yes] Do you know much about visions? #speaker: Marcus #portrait:marcus #layout:left
 ->AskAboutDream
-*[No]
+*[No] #speaker: Marcus #portrait:marcus #layout:left #hide:talkedToSennah
 ->END
 
 ===AskAboutDream
@@ -50,7 +50,7 @@ Well, visions are not usually that direct. Typically having some meaning only to
 
 ===JustCoincidence
 Well are you sure it was a vision? are you sure it was even a dream? #speaker: Sennah #portrait:sennah #layout:right
-*[Truth] I am not sure what to make of it yet, Lets just see where this case goes #speaker: Marcus #portrait:marcus #layout:left
+*[Truth] I am not sure what to make of it yet, Lets just see where this case goes #speaker: Marcus #portrait:marcus #layout:left #hide:talkedToSennah
 ->END
-*[Lie] yes of course im sure it was a dream. You know it was probably just that #speaker: Marcus #portrait:marcus #layout:left
+*[Lie] yes of course im sure it was a dream. You know it was probably just that #speaker: Marcus #portrait:marcus #layout:left #hide:talkedToSennah
 ->END
