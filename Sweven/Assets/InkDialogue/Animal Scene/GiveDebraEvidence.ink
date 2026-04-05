@@ -37,5 +37,5 @@ If your idea of it being a rough teenager who started the fire. Maybe one too ma
 ->GoodWork
 
 ===GoodWork
-I only do good work. Now im going to take the rest of the day off, you should do the same
+I only do good work. Now im going to take the rest of the day off, you should do the same #speaker: Debra #portrait:Debra #layout:right #hide:giveDebraEvidence
 ->END

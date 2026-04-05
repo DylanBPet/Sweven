@@ -38,7 +38,7 @@ Youd be surprise. Let me have a look at what you found #speaker: Nick #portrait:
 ->GiveEvidence
 
 ===GiveEvidence
-Give Nick the evidence to study? (this will block the option for others) #speaker: Nick #portrait:nick #layout:right
+Give Nick the evidence to study? (this will block the option for others) #speaker:  Narrorator #portrait:Narrorator #layout:right
 *[No] No #speaker: Marcus #portrait:marcus #layout:left
 ->END
 
@@ -62,9 +62,9 @@ Someone who keeps ramping up the intensity, first a fire, then these animals #sp
 ->ThenAnimal
 
 ===ThenHuman
-Lets hope not #speaker: Nick #portrait:nick #layout:right
+Lets hope not #speaker: Nick #portrait:nick #layout:right #hide:giveNickEvidence
 ->END
 
 ===ThenAnimal
-Lets hope so. #speaker: Nick #portrait:nick #layout:right
+Lets hope so. #speaker: Nick #portrait:nick #layout:right #hide:giveNickEvidence
 ->END

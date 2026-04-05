@@ -49,10 +49,10 @@ I promise you it is for your own good, you dont need to know. You just need to k
 ->IHaveToKnow
 
 ===Paranormal
-The animals spirits were in pain being sent to the afterlife I can feel that much. But the animals themselves were just, well, normal animals #speaker: Sennah #portrait:sennah #layout:right
+The animals spirits were in pain being sent to the afterlife I can feel that much. But the animals themselves were just, well, normal animals #speaker: Sennah #portrait:sennah #layout:right #hide:giveSennahEvidence
 ->END
 
 ===IHaveToKnow
 I told you everything the spirits want me to, please understand #speaker: Sennah #portrait:sennah #layout:right
-Nick and I will find them, dont worry #speaker: Marcus #portrait:marcus #layout:left
+Nick and I will find them, dont worry #speaker: Marcus #portrait:marcus #layout:left #hide:giveSennahEvidence
 ->END

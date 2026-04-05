@@ -48,6 +48,7 @@ public class InkManager : MonoBehaviour
     public FireLevelLogic fireLevelLogicScript;
     public FuneralLevelManager funeralLevelManager;
     public PoliceStationDayManager policeStationDayManager;
+    public AnimalLevelPoliceStation AnimalLevelPoliceStation;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -277,6 +278,18 @@ public class InkManager : MonoBehaviour
         else if (objectToRemove == "talkedToNickPoliceStation")
         {
             levelSwitchingHandlerScript.FireLevelDone();
+        }
+        else if (objectToRemove == "giveNickEvidence")
+        {
+            AnimalLevelPoliceStation.GaveEvidenceToNick();
+        }
+        else if (objectToRemove == "giveSennahEvidence")
+        {
+            AnimalLevelPoliceStation.GaveEvidenceToSennah();
+        }
+        else if (objectToRemove == "giveDebraEvidence")
+        {
+            AnimalLevelPoliceStation.GaveEvidenceToDebra();
         }
         else
         {
