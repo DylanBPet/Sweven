@@ -50,7 +50,9 @@ public class InkManager : MonoBehaviour
     public PoliceStationDayManager policeStationDayManager;
     public AnimalLevelPoliceStation AnimalLevelPoliceStation;
     public AnimalNightLevel animalNightLevel;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public PlayerWalkingScript playerWalkingScript;
+    public HumanLevelManagerScript humanLevelManagerScript;
+
     void Start()
     {
         dialogueIsPlaying = false;
@@ -323,6 +325,15 @@ public class InkManager : MonoBehaviour
         else if (objectToRemove == "toHumanLevel")
         {
             levelSwitchingHandlerScript.ToHumanLevel();
+            playerWalkingScript.ActivateCurve();
+        }
+        else if (objectToRemove == "toolTaken")
+        {
+            humanLevelManagerScript.ToolTaken();
+        }
+        else if (objectToRemove == "cabinDoorUnlocked")
+        {
+            humanLevelManagerScript.DoorUnlocked();
         }
         else
         {

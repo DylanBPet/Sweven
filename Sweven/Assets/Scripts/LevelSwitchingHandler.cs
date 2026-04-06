@@ -28,7 +28,7 @@ public class LevelSwitchingHandler : MonoBehaviour
 
     public GameObject humanMarcusRoom;
     public GameObject humanLevel;
-
+    public GameObject endOfHumanLevelHomeMorning;
 
     private bool doorIsGone = false;
 
@@ -125,5 +125,11 @@ public class LevelSwitchingHandler : MonoBehaviour
     {
         humanMarcusRoom.SetActive(false);
         humanLevel.SetActive(true);
+    }
+
+    public void EndOfHumanLevelHomeMorning()
+    {
+        humanLevel.SetActive(false);
+        endOfHumanLevelHomeMorning.SetActive(true);
     }
 }

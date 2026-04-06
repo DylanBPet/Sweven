@@ -11,6 +11,14 @@ public class PlayerWalkingScript : MonoBehaviour
     public float speed;
 
     public InkManager inkManager;
+
+    public bool animcurveMovement;
+
+    public AnimationCurve speedCurve;
+    private float t;
+    private float y;
+
+    public GameObject deadBody;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,21 +31,63 @@ public class PlayerWalkingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inkManager.dialogueIsPlaying == true)
+        t += Time.deltaTime;
+        if (animcurveMovement == false)
         {
-            input = (Vector2.zero);
-            animator.SetFloat("moveX", input.x);
-            animator.SetFloat("moveY", input.y);
+            if (inkManager.dialogueIsPlaying == true)
+            {
+                input = (Vector2.zero);
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+            }
+            else
+            {
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
+
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+
+                transform.position += (Vector3)input * speed * Time.deltaTime;
+            }
         }
-        else
+        else if (animcurveMovement == true)
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
+            if (inkManager.dialogueIsPlaying == true)
+            {
+                input = (Vector2.zero);
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+            }
+            else
+            {
 
-            animator.SetFloat("moveX", input.x);
-            animator.SetFloat("moveY", input.y);
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
 
-            transform.position += (Vector3)input * speed * Time.deltaTime;
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+
+                y = speedCurve.Evaluate(t);
+                transform.position += (Vector3)input * y * 3 * Time.deltaTime;
+
+            }
         }
+        if (t >= 1)
+        {
+            t = 0;
+        }
+    }
+
+    public void ActivateCurve()
+    {
+        transform.position = new Vector2(-6, 0);
+        deadBody.SetActive(true);
+        animcurveMovement = true;
+    }
+
+    public void StopCurve()
+    {
+        animcurveMovement = false;
     }
 }
