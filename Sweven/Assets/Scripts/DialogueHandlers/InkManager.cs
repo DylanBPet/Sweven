@@ -49,6 +49,7 @@ public class InkManager : MonoBehaviour
     public FuneralLevelManager funeralLevelManager;
     public PoliceStationDayManager policeStationDayManager;
     public AnimalLevelPoliceStation AnimalLevelPoliceStation;
+    public AnimalNightLevel animalNightLevel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -290,6 +291,34 @@ public class InkManager : MonoBehaviour
         else if (objectToRemove == "giveDebraEvidence")
         {
             AnimalLevelPoliceStation.GaveEvidenceToDebra();
+        }
+        else if (objectToRemove == "pickUpCayote")
+        {
+            animalNightLevel.cayoteHasBeenAquired();
+        }
+        else if (objectToRemove == "pickedUpHare")
+        {
+            animalNightLevel.hareHasBeenAquired();
+        }
+        else if (objectToRemove == "holeOneChosen")
+        {
+            animalNightLevel.HoleOneSelected();
+        }
+        else if (objectToRemove == "holeTwoChosen")
+        {
+            animalNightLevel.HoleTwoSelected();
+        }
+        else if (objectToRemove == "holeThreeChosen")
+        {
+            animalNightLevel.HoleThreeSelected();
+        }
+        else if (objectToRemove == "shovelPickedUp")
+        {
+            animalNightLevel.ShovelAquired();
+        }
+        else if (objectToRemove == "animalDayDone")
+        {
+            levelSwitchingHandlerScript.AnimalDayDone();
         }
         else
         {

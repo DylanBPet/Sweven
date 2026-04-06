@@ -23,6 +23,9 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject marcusRoomNightAnimalLevel;
     public GameObject animalLevel;
 
+    public GameObject animalDay;
+    public GameObject animalPoliceStation;
+
     private bool doorIsGone = false;
 
     //scripts to call
@@ -108,4 +111,9 @@ public class LevelSwitchingHandler : MonoBehaviour
         marcusRoomNightAnimalLevel.SetActive(true);
     }
 
+    public void AnimalDayDone()
+    {
+        animalDay.SetActive(false);
+        animalPoliceStation.SetActive(true);
+    }
 }
