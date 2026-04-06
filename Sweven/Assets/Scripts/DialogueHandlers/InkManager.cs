@@ -320,6 +320,10 @@ public class InkManager : MonoBehaviour
         {
             levelSwitchingHandlerScript.AnimalDayDone();
         }
+        else if (objectToRemove == "toHumanLevel")
+        {
+            levelSwitchingHandlerScript.ToHumanLevel();
+        }
         else
         {
             Debug.Log("Something Else");

@@ -26,6 +26,10 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject animalDay;
     public GameObject animalPoliceStation;
 
+    public GameObject humanMarcusRoom;
+    public GameObject humanLevel;
+
+
     private bool doorIsGone = false;
 
     //scripts to call
@@ -115,5 +119,11 @@ public class LevelSwitchingHandler : MonoBehaviour
     {
         animalDay.SetActive(false);
         animalPoliceStation.SetActive(true);
+    }
+
+    public void ToHumanLevel()
+    {
+        humanMarcusRoom.SetActive(false);
+        humanLevel.SetActive(true);
     }
 }

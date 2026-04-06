@@ -1,12 +1,12 @@
-What do you make of this?
-The poor.. bunny? I think, its hard to tell with only half of it being here
+What do you make of this? #speaker: Marcus #portrait:marcus #layout:left
+The poor.. bunny? I think, its hard to tell with only half of it being here #speaker: Debra #portrait:Debra #layout:right
 *[Anything unusual]Can you see anything unusual? something to give us a clue #speaker: Marcus #portrait:marcus #layout:left
 ->AnythingUnusual
 *[A Hare]It was a Hare. Dont ask me how I know #speaker: Marcus #portrait:marcus #layout:left
 ->AnythingUnusual
 
 ===AnythingUnusual
-Well whatever it is. Id need to run some tests to see if any of the blood or... hair... doesnt belong to the animal
+Well whatever it is. Id need to run some tests to see if any of the blood or... hair... doesnt belong to the animal #speaker: Debra #portrait:Debra #layout:right
 *[Yes] Yes #speaker: Marcus #portrait:marcus #layout:left
 ->Yes
 
@@ -14,14 +14,14 @@ Well whatever it is. Id need to run some tests to see if any of the blood or... 
 ->END
 
 ===Yes
-All the prints on the animal belonged to only that. No human dna or other kind on it
+All the prints on the animal belonged to only that. No human dna or other kind on it #speaker: Debra #portrait:Debra #layout:right
 *[Nothing?] So this was for nothing? #speaker: Marcus #portrait:marcus #layout:left
 ->Nothing
 *[How?] How is that possible? #speaker: Marcus #portrait:marcus #layout:left
 ->How
 
 ===Nothing
-No entirely, you know they are aware enough to know how to cover their tracks
+No entirely, you know they are aware enough to know how to cover their tracks #speaker: Debra #portrait:Debra #layout:right
 *[Good point] thats... actually a really good point #speaker: Marcus #portrait:marcus #layout:left
 ->GoodWork
 
@@ -29,7 +29,7 @@ No entirely, you know they are aware enough to know how to cover their tracks
 ->GoodWork
 
 ===How
-If your idea of it being a rough teenager who started the fire. Maybe one too many cop movies, they teach them how to cover up
+If your idea of it being a rough teenager who started the fire. Maybe one too many cop movies, they teach them how to cover up #speaker: Debra #portrait:Debra #layout:right
 *[Good point] thats... actually a really good point #speaker: Marcus #portrait:marcus #layout:left
 ->GoodWork
 

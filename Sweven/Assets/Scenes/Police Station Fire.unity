@@ -13049,7 +13049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &563832137
 Transform:
   m_ObjectHideFlags: 0
@@ -16802,7 +16802,7 @@ MonoBehaviour:
   player: {fileID: 449738}
   invisibleHitBox: {fileID: 289576506}
   inkManager: {fileID: 1182083191}
-  inkJSON: {fileID: 4900000, guid: 4b206617b5e14604189e5789b45392b4, type: 3}
+  inkJSON: {fileID: 4900000, guid: 893c920db89901c4db1509d47e68555d, type: 3}
   textUI: {fileID: 1032047585}
   newIconLocation: {fileID: 618123826}
   enterKeyPrefab: {fileID: 8043649529477207245, guid: cf12afa58cfcd9e40a28781789845330, type: 3}
@@ -21558,6 +21558,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ad73253ef0076c45a2c49255857892f, type: 3}
+--- !u!1 &868864680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868864681}
+  m_Layer: 0
+  m_Name: 'Human Level '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868864681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868864680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9695, y: -0.67516, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869005524
 GameObject:
   m_ObjectHideFlags: 0
@@ -31162,7 +31193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1427922716
 Transform:
   m_ObjectHideFlags: 0
@@ -37443,6 +37474,8 @@ MonoBehaviour:
   animalLevel: {fileID: 563832136}
   animalDay: {fileID: 892366672}
   animalPoliceStation: {fileID: 1355573650}
+  humanMarcusRoom: {fileID: 1427922715}
+  humanLevel: {fileID: 868864680}
   marcusHomeNightLevelLogicScript: {fileID: 1920932344}
   puttingDialogueOnObjectsScript: {fileID: 651881122}
 --- !u!1001 &1728460774
@@ -45454,3 +45487,4 @@ SceneRoots:
   - {fileID: 892366673}
   - {fileID: 1355573651}
   - {fileID: 1427922716}
+  - {fileID: 868864681}
