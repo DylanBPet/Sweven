@@ -39959,7 +39959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1427922716
 Transform:
   m_ObjectHideFlags: 0
@@ -49374,6 +49374,7 @@ MonoBehaviour:
   endOfHumanLevelHomeMorning: {fileID: 2112250738}
   finalLevelPoliceStation: {fileID: 1703210575}
   finalConfrontation: {fileID: 564753490}
+  playerWalkingScript: {fileID: 449741}
   sennahHumanLevelHitbox: {fileID: 439620836}
   marcusHomeNightLevelLogicScript: {fileID: 1920932344}
   puttingDialogueOnObjectsScript: {fileID: 651881122}
@@ -49813,7 +49814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1735754064
 Transform:
   m_ObjectHideFlags: 0
@@ -59077,12 +59078,12 @@ SceneRoots:
   - {fileID: 1032047586}
   - {fileID: 1108724493}
   - {fileID: 193337094}
-  - {fileID: 677158327}
-  - {fileID: 675585876}
+  - {fileID: 1735754064}
+  - {fileID: 1419713410}
   - {fileID: 357930074}
   - {fileID: 1779160545}
-  - {fileID: 1419713410}
-  - {fileID: 1735754064}
+  - {fileID: 677158327}
+  - {fileID: 675585876}
   - {fileID: 1430711299}
   - {fileID: 563832137}
   - {fileID: 892366673}
