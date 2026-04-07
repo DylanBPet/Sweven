@@ -10,6 +10,9 @@ I just... Dont think it has quite hit me yet, you know? #speaker: Nick #portrait
 *[Sennah Said] I said the same thing to Sennah, she said her usually spirituality stuff "because she is still with us in our souls we have not yet lost her" something like that, probably just to make me feel better
 ->SennahSaid
 
+*[Me too] Me too, although I guess we should look more the part of grieving Brother and Husband #speaker: Marcus #portrait:marcus #layout:left
+->MeToo
+
 ===IGetIt===
 Everyone grieves in their own way Marcus, we shouldnt beat ourselves up over how others react to us. Emma wouldnt have wanted that for us, especially not you. #speaker: Nick #portrait:nick #layout:right
 
@@ -36,9 +39,6 @@ She always talked about you, she was proud of the man you've become. Like you sa
 
 Thank you Nick I just... I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
-
-*[Me too] Me too, although I guess we should look more the part of grieving Brother and Husband #speaker: Marcus #portrait:marcus #layout:left
-->MeToo
 
 ===MeToo===
 I wasn't the husband yet, 2 more weeks and It would have been much more paperwork for me! #speaker: Nick #portrait:nick #layout:right
@@ -170,30 +170,3 @@ Emma never talked about it much. But I have heard those rumours too. Its creepy 
 
 *[I'm creepy?] You think I am creepy? #speaker: Marcus #portrait:marcus #layout:left
 ->ImCreepy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

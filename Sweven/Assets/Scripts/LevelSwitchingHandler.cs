@@ -28,9 +28,14 @@ public class LevelSwitchingHandler : MonoBehaviour
 
     public GameObject humanMarcusRoom;
     public GameObject humanLevel;
+    public GameObject humanLevelPoliceStatoin;
     public GameObject endOfHumanLevelHomeMorning;
+    public GameObject finalLevelPoliceStation;
+    public GameObject finalConfrontation;
 
     private bool doorIsGone = false;
+
+    public GameObject sennahHumanLevelHitbox;
 
     //scripts to call
     public MarcusHomeNightLevelLogic marcusHomeNightLevelLogicScript;
@@ -127,9 +132,42 @@ public class LevelSwitchingHandler : MonoBehaviour
         humanLevel.SetActive(true);
     }
 
+
+
+
     public void EndOfHumanLevelHomeMorning()
     {
         humanLevel.SetActive(false);
         endOfHumanLevelHomeMorning.SetActive(true);
+    }
+
+    public void EndOfHumanLevelPoliceStation()
+    {
+        endOfHumanLevelHomeMorning.SetActive(false);
+        humanLevelPoliceStatoin.SetActive(true);
+    }
+
+    public void ToFinalLevel()
+    {
+         endOfHumanLevelHomeMorning.SetActive(false);
+        humanLevelPoliceStatoin.SetActive(true);
+    }
+
+    public void NextMorning()
+    {
+        humanLevelPoliceStatoin.SetActive(false);
+        finalLevelPoliceStation.SetActive(true);
+    }
+
+    public void FinalLevelNight()
+    {
+        finalLevelPoliceStation.SetActive(false);
+        finalConfrontation.SetActive(true);
+        player.transform.position = (new Vector2(-6, 0));
+    }
+
+    public void SennahHitbox()
+    {
+        sennahHumanLevelHitbox.SetActive(true);
     }
 }

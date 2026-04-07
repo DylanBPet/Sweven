@@ -8,6 +8,9 @@ I just... Dont think it has quite hit me yet, you know? #speaker: Nick #portrait
 Is there something wrong with me #speaker: Marcus #portrait:marcus #layout:left
 ->IGetIt
 
+*[Me too] Me too, although I guess we should look more the part of grieving Brother and Husband #speaker: Marcus #portrait:marcus #layout:left
+->MeToo
+
 ===IGetIt===
 Everyone grieves in their own way Marcus, we shouldnt beat ourselves up over how others react to us. #speaker: Nick #portrait:nick #layout:right
 Emma wouldnt have wanted that for us, especially not you. #speaker: Nick #portrait:nick #layout:right
@@ -37,8 +40,6 @@ She'd never want anything bad to happen to you again. Im sure shes watching over
 Thank you Nick I just... I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
 
-*[Me too] Me too, although I guess we should look more the part of grieving Brother and Husband #speaker: Marcus #portrait:marcus #layout:left
-->MeToo
 
 ===MeToo===
 I wasn't the husband yet, 2 more weeks and It would have been much more paperwork for me! #speaker: Nick #portrait:nick #layout:right

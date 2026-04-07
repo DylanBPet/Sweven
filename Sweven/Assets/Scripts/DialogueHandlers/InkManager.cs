@@ -52,6 +52,7 @@ public class InkManager : MonoBehaviour
     public AnimalNightLevel animalNightLevel;
     public PlayerWalkingScript playerWalkingScript;
     public HumanLevelManagerScript humanLevelManagerScript;
+    public FinalLevelManagerScript finalLevelManagerScript;
 
     void Start()
     {
@@ -334,6 +335,30 @@ public class InkManager : MonoBehaviour
         else if (objectToRemove == "cabinDoorUnlocked")
         {
             humanLevelManagerScript.DoorUnlocked();
+        }
+        else if (objectToRemove == "finalRoomDoor")
+        {
+            levelSwitchingHandlerScript.ToFinalLevel();
+        }
+        else if (objectToRemove == "invisDoor")
+        {
+            finalLevelManagerScript.RemoveInvisBarrier();
+        }
+        else if (objectToRemove == "turnScreenBlack")
+        {
+            finalLevelManagerScript.TurnScreenBlack();
+        }
+        else if (objectToRemove == "toFinalLevelHomeNight")
+        {
+            levelSwitchingHandlerScript.FinalLevelNight();
+        }
+        else if (objectToRemove == "theNextMorning")
+        {
+            levelSwitchingHandlerScript.NextMorning();
+        }
+        else if (objectToRemove == "showSennahHitbox")
+        {
+            levelSwitchingHandlerScript.SennahHitbox();
         }
         else
         {

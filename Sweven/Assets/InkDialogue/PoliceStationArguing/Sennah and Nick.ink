@@ -37,7 +37,7 @@ Marcus this is ridiculous right? Obviously I couldn't have done all this. #speak
 
 ===JustCooperate
 Sennah you are under arrest. #speaker: Nick #portrait:nick #layout:right
-Wait Marucs listen to me, did you talk to the witness who saw the person carrying the animals?
+Wait Marucs listen to me, did you talk to the witness who saw the person carrying the animals? #speaker: Sennah #portrait:sennah #layout:right
 *[No] No #speaker: Marcus #portrait:marcus #layout:left
 ->No
 
@@ -53,6 +53,7 @@ what if he saw nick #speaker: Sennah #portrait:sennah #layout:right
 Enough! Sennah, you had access to evidence, a history of shady activity. #speaker: Nick #portrait:nick #layout:right
 And lets not forget you were here snooping around as soon as we get close to closing in on the colprate. #speaker: Nick #portrait:nick #layout:right
 You are under arrest, dont make this into a scene #speaker: Nick #portrait:nick #layout:right
+Who do you arrest? #speaker: Narrorator #portrait:Narrorator #layout:right
 *[Arrest Nick] Nick you are under arrest #speaker: Marcus #portrait:marcus #layout:left
 ->ArrestNick
 *[Arrest Sennah] Sennah you are under arrest #speaker: Marcus #portrait:marcus #layout:left
@@ -92,15 +93,37 @@ And you can trust me Marcus, I'm sorry. #speaker: Sennah #portrait:sennah #layou
 ->JustCooperate
 
 ===ArrestNick
-Marcus approaches Nick with handcuffs. Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:left
+Marcus approaches Nick with handcuffs. Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
 Another police agency takes over.
-You go gome.
-->END
+You go home, and go to sleep. #speaker: Narrorator #portrait:Narrorator #layout:right 
+Marcus #speaker:??? #portrait:Narrorator #layout:right
+Go home. #speaker:??? #portrait:Narrorator #layout:right
+*[Who are you?] Who are you? #speaker: Marcus #portrait:marcus #layout:left
+->Home
+*[What?] What? #speaker: Marcus #portrait:marcus #layout:left
+->Home
+
 ===ArrestSennah
-Nick approaches Sennah with handcuffs. Marcus leaves to see what was moved in evidence. #speaker: Narrorator #portrait:Narrorator #layout:left
+Nick approaches Sennah with handcuffs. Marcus leaves to see what was moved in evidence. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
 As you approach the door you hear a gunshot ring from behind you.
 Running back you see Nick standing over Sennah, who is laying on the ground. The rest of the day is a loud blurr.
-You go home.
+You go home, and go to sleep. #speaker: Narrorator #portrait:Narrorator #layout:right 
+Marcus #speaker:??? #portrait:Narrorator #layout:right
+Go home. #speaker:??? #portrait:Narrorator #layout:right
+*[Who are you?] Who are you? #speaker: Marcus #portrait:marcus #layout:left
+->Home
+*[What?] What? #speaker: Marcus #portrait:marcus #layout:left
+->Home
+
+===Home
+HOME #speaker:??? #portrait:Narrorator #layout:right
+*[Why me...] Why are you doing this to me #speaker: Marcus #portrait:marcus #layout:left
+->GoSeeMom
+*[Sennah?] Sennah? is that you #speaker: Marcus #portrait:marcus #layout:left
+->GoSeeMom
+
+==GoSeeMom
+Go see Mom #speaker: Emma #portrait:Narrorator #layout:right #hide:toFinalLevelHomeNight
 ->END
 
 
