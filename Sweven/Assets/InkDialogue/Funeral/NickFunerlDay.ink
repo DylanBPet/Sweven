@@ -17,7 +17,7 @@ Emma wouldnt have wanted that for us, especially not you. #speaker: Nick #portra
 
 As for me, shed probably want me to suffer and never get engaged again haha. #speaker: Nick #portrait:nick #layout:right
 
-Narrorator: You get some side stares from guests. This is just how Nick processes emotions
+You get some side stares from guests. This is just how Nick processes emotions #speaker:Narrorator #portrait:Narrorator #layout:right
 
 ehem...anyways, Marcus Even in her Final moments, she wanted you to be safe. #speaker: Nick #portrait:nick #layout:right
 
@@ -28,7 +28,7 @@ ehem...anyways, Marcus Even in her Final moments, she wanted you to be safe. #sp
 ->WhatDidSheSay
 
 ==What==
-Its not healthy to dig more into it Nick. Like the Debra said in her report, she had a new reaction to her medication. You knew how sick she was getting #speaker: Nick #portrait:nick #layout:right
+Its not healthy to dig more into it Nick. Like Debra said in her report, she had a new reaction to her medication. You knew how sick she was getting #speaker: Nick #portrait:nick #layout:right
 
 Youre right, shes in a much better place now... I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
@@ -44,7 +44,7 @@ Thank you Nick I just... I miss her #speaker: Marcus #portrait:marcus #layout:le
 ===MeToo===
 I wasn't the husband yet, 2 more weeks and It would have been much more paperwork for me! #speaker: Nick #portrait:nick #layout:right
 
-Narrorator: You get some side stares from guests. This is just how Nick processes emotions
+You get some side stares from guests. This is just how Nick processes emotions #speaker:Narrorator #portrait:Narrorator #layout:right
 
 *[Suggestion] If you hate paperwork so much, maybe detective is not the line of work for you #speaker: Marcus #portrait:marcus #layout:left
 ->Suggestion

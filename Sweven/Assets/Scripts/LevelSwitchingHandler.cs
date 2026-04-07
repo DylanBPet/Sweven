@@ -33,6 +33,8 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject finalLevelPoliceStation;
     public GameObject finalConfrontation;
 
+    public PlayerWalkingScript playerWalkingScript;
+
     private bool doorIsGone = false;
 
     public GameObject sennahHumanLevelHitbox;
@@ -139,6 +141,7 @@ public class LevelSwitchingHandler : MonoBehaviour
     {
         humanLevel.SetActive(false);
         endOfHumanLevelHomeMorning.SetActive(true);
+        playerWalkingScript.StopCurve();
     }
 
     public void EndOfHumanLevelPoliceStation()

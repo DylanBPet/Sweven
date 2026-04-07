@@ -42,13 +42,14 @@ Wait Marucs listen to me, did you talk to the witness who saw the person carryin
 ->No
 
 ===WhereWereYou
-At home, asleep, just like everyone else here. I dont even know what Nick got this idea of it being one of us... unless #speaker: Sennah #portrait:sennah #layout:right
+At home, asleep, just like everyone else here. 
+I dont even know what Nick got this idea of it being one of us... unless #speaker: Sennah #portrait:sennah #layout:right
 Wait Marucs listen to me, did you talk to the witness who saw the person carrying the animals? #speaker: Sennah #portrait:sennah #layout:right
 *[No] No #speaker: Marcus #portrait:marcus #layout:left
 ->No
 
 ===No
-Right, thats because only Nick did... so what if he did see more than nick told us...  #speaker: Sennah #portrait:sennah #layout:right
+Right, thats because only Nick did... so what if she did see more than nick told us...  #speaker: Sennah #portrait:sennah #layout:right
 what if he saw nick #speaker: Sennah #portrait:sennah #layout:right
 Enough! Sennah, you had access to evidence, a history of shady activity. #speaker: Nick #portrait:nick #layout:right
 And lets not forget you were here snooping around as soon as we get close to closing in on the colprate. #speaker: Nick #portrait:nick #layout:right
@@ -93,7 +94,8 @@ And you can trust me Marcus, I'm sorry. #speaker: Sennah #portrait:sennah #layou
 ->JustCooperate
 
 ===ArrestNick
-Marcus approaches Nick with handcuffs. Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
+Marcus approaches Nick with handcuffs. 
+Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
 Another police agency takes over.
 You go home, and go to sleep. #speaker: Narrorator #portrait:Narrorator #layout:right 
 Marcus #speaker:??? #portrait:Narrorator #layout:right

@@ -338,6 +338,7 @@ public class InkManager : MonoBehaviour
         }
         else if (objectToRemove == "finalRoomDoor")
         {
+            playerWalkingScript.StopCurve();
             levelSwitchingHandlerScript.ToFinalLevel();
         }
         else if (objectToRemove == "invisDoor")

@@ -89,5 +89,6 @@ public class PlayerWalkingScript : MonoBehaviour
     public void StopCurve()
     {
         animcurveMovement = false;
+        deadBody.SetActive(false);
     }
 }

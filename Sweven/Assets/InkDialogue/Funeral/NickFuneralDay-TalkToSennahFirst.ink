@@ -7,7 +7,9 @@ I just... Dont think it has quite hit me yet, you know? #speaker: Nick #portrait
 *[I get it] I know exactly what you mean. She basically raised me. I wouldnt be here today if not for her, so why am I not more upset? Is there something wrong with me #speaker: Marcus #portrait:marcus #layout:left
 ->IGetIt
 
-*[Sennah Said] I said the same thing to Sennah, she said her usually spirituality stuff "because she is still with us in our souls we have not yet lost her" something like that, probably just to make me feel better
+*[Sennah Said] I said the same thing to Sennah, #speaker: Marcus #portrait:marcus #layout:left
+she said her usually spirituality stuff "because she is still with us in our souls we have not yet lost her" 
+something like that, probably just to make me feel better
 ->SennahSaid
 
 *[Me too] Me too, although I guess we should look more the part of grieving Brother and Husband #speaker: Marcus #portrait:marcus #layout:left
@@ -18,7 +20,7 @@ Everyone grieves in their own way Marcus, we shouldnt beat ourselves up over how
 
 As for me, shed probably want me to suffer and never get engaged again haha. #speaker: Nick #portrait:nick #layout:right
 
-Narrorator: You get some side stares from guests. This is just how Nick processes emotions
+You get some side stares from guests. This is just how Nick processes emotions #speaker:Narrorator #portrait:Narrorator #layout:right
 
 ehem...anyways, Marcus Even in her Final moments, she wanted you to be safe. #speaker: Nick #portrait:nick #layout:right
 
@@ -29,7 +31,7 @@ ehem...anyways, Marcus Even in her Final moments, she wanted you to be safe. #sp
 ->WhatDidSheSay
 
 ==What==
-Its not healthy to dig more into it Nick. Like the Debra said in her report, she had a new reaction to her medication. You knew how sick she was getting #speaker: Nick #portrait:nick #layout:right
+Its not healthy to dig more into it Nick. Like Debra said in her report, she had a new reaction to her medication. You knew how sick she was getting #speaker: Nick #portrait:nick #layout:right
 
 Youre right, shes in a much better place now... I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
@@ -43,7 +45,7 @@ Thank you Nick I just... I miss her #speaker: Marcus #portrait:marcus #layout:le
 ===MeToo===
 I wasn't the husband yet, 2 more weeks and It would have been much more paperwork for me! #speaker: Nick #portrait:nick #layout:right
 
-Narrorator: You get some side stares from guests. This is just how Nick processes emotions
+You get some side stares from guests. This is just how Nick processes emotions #speaker:Narrorator #portrait:Narrorator #layout:right
 
 *[Suggestion] If you hate paperwork so much, maybe detective is not the line of work for you #speaker: Marcus #portrait:marcus #layout:left
 ->Suggestion
@@ -135,7 +137,6 @@ Well have you tried to lift a car? turn invisible? jump off a building to see if
 A joke that doesnt risk offending usually arent as funny. But youre right, im sorry. This whole situation has me not thinkin straight #speaker: Nick #portrait:nick #layout:right
 *[I miss her]No youre okay, I get it. I miss her #speaker: Marcus #portrait:marcus #layout:left
 ->MeTooBuddy
-
 ===WhatAboutEmma
 No not really. I never wanted to pry on a sensitive part of your lifes like that. When she did mention those times, it would be about you. #speaker: Nick #portrait:nick #layout:right
 Always about you, even in her final moments, she wanted you to be safe. #speaker: Nick #portrait:nick #layout:right
@@ -161,7 +162,7 @@ Shes not crazy? All that stareing off into space, talking to wisps. Could have f
 ===EmmaDidThatToo
 Is that supposed to make me feel better? Was I engaged to a crazy lady? #speaker: Nick #portrait:nick #layout:right
 
-Narrorator:You get some side stares from guests. This is just how Nick processes emotions
+You get some side stares from guests. This is just how Nick processes emotions #speaker:Narrorator #portrait:Narrorator #layout:right
 *[Thats normal]Haha, no. Thats just what happends when you grow up in the places we did. #speaker: Marcus #portrait:marcus #layout:left
 ->ThatsNormal
 

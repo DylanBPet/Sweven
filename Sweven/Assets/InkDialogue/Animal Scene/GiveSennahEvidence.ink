@@ -7,8 +7,8 @@ Oh my, such agony illuminating from the body of that poor creature #speaker: Sen
 ->WhatCanYouTellMe
 
 ===WhatCanYouTellMe
-Um, Its hard to tell. I would need to study it closer.
-Give Sennah the evidence to study? (this will block the option for others) #speaker: Marcus #portrait:marcus #layout:left
+Um, Its hard to tell. I would need to study it closer. #speaker: Sennah #portrait:sennah #layout:right
+Give Sennah the evidence to study? (this will block the option for others) #speaker: Narrorator #portrait:Narrorator #layout:left
 *[Yes] Yes #speaker: Marcus #portrait:marcus #layout:left
 ->Yes
 

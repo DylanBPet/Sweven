@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 449736}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.66, y: -0.01, z: 0}
+  m_LocalPosition: {x: 1.31, y: 0.44, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9900,7 +9900,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.61, y: 0.14, z: 0}
-  m_LocalScale: {x: 20.634113, y: 9.981855, z: 1.9067172}
+  m_LocalScale: {x: 20.634113, y: 10.9800415, z: 1.9067172}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 719768319}
@@ -17436,7 +17436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &564753491
 Transform:
   m_ObjectHideFlags: 0
@@ -49373,7 +49373,7 @@ MonoBehaviour:
   humanLevelPoliceStatoin: {fileID: 179860472}
   endOfHumanLevelHomeMorning: {fileID: 2112250738}
   finalLevelPoliceStation: {fileID: 1703210575}
-  finalLevelRoomNight: {fileID: 564753490}
+  finalConfrontation: {fileID: 564753490}
   sennahHumanLevelHitbox: {fileID: 439620836}
   marcusHomeNightLevelLogicScript: {fileID: 1920932344}
   puttingDialogueOnObjectsScript: {fileID: 651881122}
@@ -49813,7 +49813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1735754064
 Transform:
   m_ObjectHideFlags: 0

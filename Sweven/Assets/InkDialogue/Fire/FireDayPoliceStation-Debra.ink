@@ -25,7 +25,8 @@ No they speak mexican silly. Anyways how did the fire investigation go, get anyt
 *[No suspects] No suspects unfortunatly. and everything was Burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
 ->NoSuspects
 
-*[Average looking person] One average looking person of average height, weight, and black clothing seen running off nearby. and everything was Burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
+*[Average looking person] One average looking person of average height, weight, and black clothing seen running off nearby.#speaker: Marcus #portrait:marcus #layout:left
+Everything was Burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
 ->NoSuspects
 
 ===NoSuspects
@@ -41,7 +42,8 @@ Um, I dont know, a book? what else, not like they made any money. #speaker: Debr
 ->Interesting
 
 ===ProbablyTeens
-I mean who hasnt burnt down a library as a teenager. Im just saying that if I were to burn down a library, it would be a waste to just leave everything to burn #speaker: Debra #portrait:Debra #layout:right
+I mean who hasnt burnt down a library as a teenager. #speaker: Debra #portrait:Debra #layout:right
+Im just saying that if I were to burn down a library, it would be a waste to just leave everything to burn #speaker: Debra #portrait:Debra #layout:right
 ->Interesting
 
 ===Interesting
