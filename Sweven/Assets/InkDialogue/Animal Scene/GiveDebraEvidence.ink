@@ -7,11 +7,12 @@ The poor.. bunny? I think, its hard to tell with only half of it being here #spe
 
 ===AnythingUnusual
 Well whatever it is. Id need to run some tests to see if any of the blood or... hair... doesnt belong to the animal #speaker: Debra #portrait:Debra #layout:right
-*[Yes] Yes #speaker: Marcus #portrait:marcus #layout:left
-->Yes
-
+Give Debra the evidence to study? (this will block the option for others) #speaker:  Narrorator #portrait:Narrorator #layout:right
 *[No] No #speaker: Marcus #portrait:marcus #layout:left
 ->END
+
+*[Yes] Yes #speaker: Marcus #portrait:marcus #layout:left
+->Yes
 
 ===Yes
 All the prints on the animal belonged to only that. No human dna or other kind on it #speaker: Debra #portrait:Debra #layout:right
