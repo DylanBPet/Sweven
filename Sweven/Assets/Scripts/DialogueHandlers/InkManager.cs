@@ -361,6 +361,14 @@ public class InkManager : MonoBehaviour
         {
             levelSwitchingHandlerScript.SennahHitbox();
         }
+        else if (objectToRemove == "finalBlackScreen")
+        {
+            levelSwitchingHandlerScript.FinalBlackScreen();
+        }
+        else if (objectToRemove == "toCredits")
+        {
+            levelSwitchingHandlerScript.EndCreditCoroutine();
+        }
         else
         {
             Debug.Log("Something Else");

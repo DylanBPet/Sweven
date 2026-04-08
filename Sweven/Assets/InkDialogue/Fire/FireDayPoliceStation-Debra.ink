@@ -17,7 +17,8 @@ Yesss, the one with the Eifel tower, not any of those posing cities. Anyways how
 *[No suspects] No suspects unfortunatly. and everything was Burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
 ->NoSuspects
 
-*[Average looking person] One average looking person of average height, weight, and black clothing seen running off nearby. and everything was Burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
+*[Average looking person] One average looking person of average height, weight, and black clothing seen running off nearby. #speaker: Marcus #portrait:marcus #layout:left
+Everything was burnt to a crisp, no forensics for you Debra #speaker: Marcus #portrait:marcus #layout:left
 ->NoSuspects
 
 ===Mexico

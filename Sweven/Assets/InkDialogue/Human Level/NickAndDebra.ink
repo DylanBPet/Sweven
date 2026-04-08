@@ -46,7 +46,7 @@ We stay focused, lets look over what we have again. #speaker: Nick #portrait:nic
 
 ===TheLibrary
 Some kind of inciting incident?  #speaker: Nick #portrait:nick #layout:right
-Maybe just testing the waters to see what they could get away with
+Maybe just testing the waters to see what they could get away with #speaker: Nick #portrait:nick #layout:right
 ->AlreadyKnewThat
 ===Animals
 My theory still stands that it was practice for what came after, what came today. #speaker: Nick #portrait:nick #layout:right

@@ -53,7 +53,8 @@ Your sister cares for you deeply nick, even if she cant tell you.#speaker: Senna
 You can feel the aura of her that lingers, focus on it #speaker: Sennah #portrait:sennah #layout:right
 
 you close your eyes and focus deeply. You feel nothing but the stale air of a funeral. #speaker:Narrorator #portrait:Narrorator #layout:right
-*[Lie] I can feel her warmth. But it makes me sad, it doesnt feel the same as when she was with us physically. In my head it is just the memory of what it was like #speaker: Marcus #portrait:marcus #layout:left
+*[Lie] I can feel her warmth. But it makes me sad, #speaker: Marcus #portrait:marcus #layout:left
+it doesnt feel the same as when she was with us physically. In my head it is just the memory of what it was like #speaker: Marcus #portrait:marcus #layout:left
 ->Lie
 
 *[Truth] I cant feel anything. Shes moved on, its best for everyone if we both accept that #speaker: Marcus #portrait:marcus #layout:left
@@ -109,5 +110,6 @@ Hes your friend not mine marcus, if he wants you to know he will tell you. Im ju
 ->YoureWeird
 
 ===YoureWeird
-I cant help it. Emma really liked talking about it with me. I know i said shes with us in spirit, but I will miss our talks #speaker: Sennah #portrait:sennah #layout:right #hide:toMarcusRoomNight
+I cant help it. Emma really liked talking about it with me. #speaker: Sennah #portrait:sennah #layout:right #hide:toMarcusRoomNight
+I know i said shes with us in spirit, but I will miss our talks #speaker: Sennah #portrait:sennah #layout:right #hide:toMarcusRoomNight
 ->END

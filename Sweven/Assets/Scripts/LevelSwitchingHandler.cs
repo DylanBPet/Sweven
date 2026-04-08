@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class LevelSwitchingHandler : MonoBehaviour
@@ -32,6 +33,9 @@ public class LevelSwitchingHandler : MonoBehaviour
     public GameObject endOfHumanLevelHomeMorning;
     public GameObject finalLevelPoliceStation;
     public GameObject finalConfrontation;
+
+    public GameObject finalBlackScreen;
+    public GameObject credits;
 
     public PlayerWalkingScript playerWalkingScript;
 
@@ -172,5 +176,25 @@ public class LevelSwitchingHandler : MonoBehaviour
     public void SennahHitbox()
     {
         sennahHumanLevelHitbox.SetActive(true);
+    }
+
+    public void FinalBlackScreen()
+    {
+        finalConfrontation.SetActive(false);
+        finalBlackScreen.SetActive(true);
+    }
+
+    public void EndCreditCoroutine()
+    {
+        StartCoroutine(CreditMoves());
+    }
+
+    IEnumerator CreditMoves()
+    {
+        while (credits.transform.position.y < 3.5)
+        {
+            credits.transform.position += new Vector3(0, 0.005f);
+            yield return null;
+        } 
     }
 }

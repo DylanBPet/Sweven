@@ -42,7 +42,7 @@ Wait Marucs listen to me, did you talk to the witness who saw the person carryin
 ->No
 
 ===WhereWereYou
-At home, asleep, just like everyone else here. 
+At home, asleep, just like everyone else here. #speaker: Sennah #portrait:sennah #layout:right
 I dont even know what Nick got this idea of it being one of us... unless #speaker: Sennah #portrait:sennah #layout:right
 Wait Marucs listen to me, did you talk to the witness who saw the person carrying the animals? #speaker: Sennah #portrait:sennah #layout:right
 *[No] No #speaker: Marcus #portrait:marcus #layout:left
@@ -50,7 +50,7 @@ Wait Marucs listen to me, did you talk to the witness who saw the person carryin
 
 ===No
 Right, thats because only Nick did... so what if she did see more than nick told us...  #speaker: Sennah #portrait:sennah #layout:right
-what if he saw nick #speaker: Sennah #portrait:sennah #layout:right
+what if she saw nick #speaker: Sennah #portrait:sennah #layout:right
 Enough! Sennah, you had access to evidence, a history of shady activity. #speaker: Nick #portrait:nick #layout:right
 And lets not forget you were here snooping around as soon as we get close to closing in on the colprate. #speaker: Nick #portrait:nick #layout:right
 You are under arrest, dont make this into a scene #speaker: Nick #portrait:nick #layout:right
@@ -94,31 +94,37 @@ And you can trust me Marcus, I'm sorry. #speaker: Sennah #portrait:sennah #layou
 ->JustCooperate
 
 ===ArrestNick
-Marcus approaches Nick with handcuffs. 
-Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
-Another police agency takes over.
+Marcus approaches Nick with handcuffs. #speaker: Narrorator #portrait:Narrorator #layout:right #hide:turnScreenBlack
+Nick immediatly becomes hostile, attacking and shoving Marcus to the ground before escaping. #speaker: Narrorator #portrait:Narrorator #layout:right
+Another police agency takes over. #speaker: Narrorator #portrait:Narrorator #layout:right
 You go home, and go to sleep. #speaker: Narrorator #portrait:Narrorator #layout:right 
+ #speaker: Narrorator #portrait:Narrorator #layout:left
+ #speaker: Narrorator #portrait:Narrorator #layout:left
 Marcus #speaker:??? #portrait:Narrorator #layout:right
 Go home. #speaker:??? #portrait:Narrorator #layout:right
+.. #speaker: Narrorator #portrait:Narrorator #layout:right
+.....
 *[Who are you?] Who are you? #speaker: Marcus #portrait:marcus #layout:left
 ->Home
 *[What?] What? #speaker: Marcus #portrait:marcus #layout:left
 ->Home
 
 ===ArrestSennah
-Nick approaches Sennah with handcuffs. Marcus leaves to see what was moved in evidence. #speaker: Narrorator #portrait:Narrorator #layout:left #hide:turnScreenBlack
-As you approach the door you hear a gunshot ring from behind you.
-Running back you see Nick standing over Sennah, who is laying on the ground. The rest of the day is a loud blurr.
+Nick approaches Sennah with handcuffs. Marcus leaves to see what was moved in evidence. #speaker: Narrorator #portrait:Narrorator #layout:right #hide:turnScreenBlack
+As you approach the door you hear a gunshot ring from behind you. #speaker: Narrorator #portrait:Narrorator #layout:right
+Running back you see Nick standing over Sennah, who is laying on the ground. The rest of the day is a loud blurr. #speaker: Narrorator #portrait:Narrorator #layout:right
 You go home, and go to sleep. #speaker: Narrorator #portrait:Narrorator #layout:right 
-Marcus #speaker:??? #portrait:Narrorator #layout:right
-Go home. #speaker:??? #portrait:Narrorator #layout:right
+.. #speaker: Narrorator #portrait:Narrorator #layout:right
+..... #speaker: Narrorator #portrait:Narrorator #layout:right
+Marcus #speaker:??? #portrait:Narrorator #layout:left
+Go home. #speaker:??? #portrait:Narrorator #layout:left
 *[Who are you?] Who are you? #speaker: Marcus #portrait:marcus #layout:left
 ->Home
 *[What?] What? #speaker: Marcus #portrait:marcus #layout:left
 ->Home
 
 ===Home
-HOME #speaker:??? #portrait:Narrorator #layout:right
+HOME #speaker:??? #portrait:Narrorator #layout:left
 *[Why me...] Why are you doing this to me #speaker: Marcus #portrait:marcus #layout:left
 ->GoSeeMom
 *[Sennah?] Sennah? is that you #speaker: Marcus #portrait:marcus #layout:left

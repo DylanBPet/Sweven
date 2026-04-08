@@ -44,11 +44,11 @@ Oh yeah? Well did ya bust open a window to jump out? Cause thats what the people
 
 ===Lie===
 Thats good, no voodoo visions. Maybe dont mention it to Sennah unless you want her to go crazy theorist on you... again #speaker: Nick #portrait:nick #layout:right
-Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right
+Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right #hide:endDemo
 ->END
 ===Truth===
 Well you are now my prime suspect Marcus (just kidding) #speaker: Nick #portrait:nick #layout:right
-Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right
+Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right #hide:endDemo
 ->END
 ===Description===
 Dark cloths, average everything else. Didnt even get whether they was male or female #speaker: Nick #portrait:nick #layout:right
@@ -69,7 +69,7 @@ Thats what the people are tellin me #speaker: Nick #portrait:nick #layout:right
 
 ===AnythingElse==
 Everything else is burned to a crisp, not that we had much to go off their either #speaker: Nick #portrait:nick #layout:right
-Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right
+Lets get back to the station and see what the others have got #speaker: Nick #portrait:nick #layout:right #hide:endDemo
 ->END
 
 ===Helpful===

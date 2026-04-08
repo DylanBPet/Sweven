@@ -35,7 +35,7 @@ Debra is booksmart, but shes gotta leave the more practical thinking to us eh #s
 
 ===WorthLookingInto
 How? not like they have tracking numbers in em #speaker: Nick #portrait:nick #layout:right
-*[Just check] Just maybe see if whoever was working there saw anyone eying up a book #speaker: Marcus #portrait:marcus #layout:left
+*[Just check] Just see if whoever was working there saw anyone eying up a book #speaker: Marcus #portrait:marcus #layout:left
 ->JustCheck
 
 ===HerBluntThinking
